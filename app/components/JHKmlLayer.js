@@ -1,0 +1,82 @@
+import React from 'react';
+import {Circle, Marker, Polygon} from 'react-gmaps';
+
+var config = require('./../../config');
+
+module.exports = {
+    insideArea(mapComponents, lng, lat) {
+        let mc;
+        for (mc in mapComponents){
+            if(mapComponents[mc].geometry.type == "Polygon") {
+                let pc;
+                let vertices_lat = [];
+                let vertices_lng = [];
+                for (pc in mapComponents[mc].geometry.coordinates[0]){
+                    vertices_lat.push(mapComponents[mc].geometry.coordinates[0][pc][1]);
+                    vertices_lng.push(mapComponents[mc].geometry.coordinates[0][pc][0]);
+                }
+
+                // Check if in polygon
+                let length = vertices_lat.length;
+                let i = 0;
+                let j = 0;
+                let c = 0;
+
+                for (i = 0, j = length-1; i < length; j = i++) {
+                    if ((vertices_lng[i] >  lat != (vertices_lng[j] > lat)) && (lng < (vertices_lat[j] - vertices_lat[i]) * (lat - vertices_lng[i]) / (vertices_lng[j] - vertices_lng[i]) + vertices_lat[i])) {
+                        c = !c;
+                    }
+                }
+                if (c) {
+                    return mapComponents[mc].properties.name;
+                }
+            }
+        }
+    },
+
+    render(mapComponents, group = true, circle = true, subarea = true) {
+        var result = [];
+        for (var count in mapComponents){
+            var it = mapComponents[count];
+            switch (it.geometry.type){
+                case "Point":
+                    if (group){
+                        result.push(<Marker
+                            lat={it.geometry.coordinates[1]}
+                            lng={it.geometry.coordinates[0]}
+                            draggable={false}
+                            key={result.length}
+                        />);
+                        if (circle && it.properties.name.indexOf(config.circle.forGroup) !== -1){
+                            result.push(<Circle
+                                lat={it.geometry.coordinates[1]}
+                                lng={it.geometry.coordinates[0]}
+                                key={result.length}
+                                radius={config.circle.radius}
+                            />);
+                        }
+                    }
+                    break;
+                case "Polygon":
+                    if (subarea) {
+                        const refactor = [];
+                        let i;
+                        for(i in it.geometry.coordinates[0]){
+                            refactor.push({
+                                lat: it.geometry.coordinates[0][i][1],
+                                lng: it.geometry.coordinates[0][i][0]
+                            });
+                        }
+                        result.push(<Polygon
+                           path={refactor}
+                           key={result.length}
+                        />);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        return result;
+    }
+};
