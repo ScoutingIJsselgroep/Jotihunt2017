@@ -8,7 +8,7 @@ import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
 var config = require('./../../config');
 
-class MapHint extends React.Component {
+class ListHint extends React.Component {
 
   constructor (props) {
     super(props);
@@ -38,26 +38,16 @@ class MapHint extends React.Component {
   }
 
   render () {
-    console.log(this.state.hintlist);
     return (
       <div className='container'>
         <div className='row fadeInUp animated'>
           <div className='col-sm-12'>
             <div className='panel panel-default'>
-              <div className='panel-heading'>Hints op de kaart
+              <div className='panel-heading'>Hints in een lijst
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
                   Refresh</small></div>
               <div className='panel-body'>
-                <Gmaps
-                    width={'100%'}
-                    height={'50em'}
-                    lat={config.map.center.lat}
-                    lng={config.map.center.lng}
-                    zoom={config.map.center.zoom}
-                    loadingMessage={'Map laden'}
-                    params={{v: '3.exp', key: config.apiKey}}>
-                  {PointLayer.render(this.state.hintlist.hintlist)}
-                </Gmaps>
+
               </div>
             </div>
           </div>
@@ -67,4 +57,4 @@ class MapHint extends React.Component {
   }
 }
 
-export default MapHint;
+export default ListHint;

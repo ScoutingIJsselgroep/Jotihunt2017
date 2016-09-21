@@ -6,6 +6,7 @@ import Character from './components/Character';
 import CharacterList from './components/CharacterList';
 import AddHint from './components/AddHint';
 import MapHint from './components/MapHint';
+import ListHint from './components/ListHint';
 
 export default (
   <Route component={App}>
@@ -14,6 +15,7 @@ export default (
     <Route path='/characters/:id' component={Character} />
     <Route path='/hint/add' component={AddHint} />
     <Route path='/hint/map' component={MapHint} />
+    <Route path='/hint/list' component={ListHint} />
     <Route path=':category' component={CharacterList}>
       <Route path=':race' component={CharacterList}>
         <Route path=':bloodline' component={CharacterList} />
