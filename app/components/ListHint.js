@@ -38,6 +38,15 @@ class ListHint extends React.Component {
   }
 
   render () {
+    var hintlist = [];
+    let i;
+    for (i in this.state.hintlist.hintlist){
+      hintlist.push(
+          <div>
+            {this.state.hintlist.hintlist[i].wsgx}
+          </div>
+      );
+    }
     return (
       <div className='container'>
         <div className='row fadeInUp animated'>
@@ -47,7 +56,7 @@ class ListHint extends React.Component {
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
                   Refresh</small></div>
               <div className='panel-body'>
-
+                {hintlist}
               </div>
             </div>
           </div>
