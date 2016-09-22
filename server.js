@@ -548,6 +548,12 @@ io.sockets.on('connection', function(socket) {
   });
 });
 
+/**
+ * Polling. Do this every now and then :)
+ */
+
+
+
 server.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
