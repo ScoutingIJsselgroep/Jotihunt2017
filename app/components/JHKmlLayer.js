@@ -79,7 +79,7 @@ module.exports = {
                            path={refactor}
                            fillColor={'#'+it.properties.style}
                            strokeColor={'#'+it.properties.style}
-                           fillOpacity:{config.map.fillOpacity}
+                           fillOpacity={config.map.fillOpacity}
                            key={result.length}
                         />);
                     }
