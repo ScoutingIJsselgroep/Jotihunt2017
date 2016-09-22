@@ -8,16 +8,15 @@ class HintListActions {
     );
   }
 
-  getHints() {
+  getHints(value) {
     let params = {
-
+      value: value
     };
     let url = '/api/hints';
 
     $.ajax({ url: url, data: params })
       .done((data) => {
-        console.log(data);
-        this.actions.getHintsSuccess(data);
+        this.actions.getHintsSuccess({data: data, search: value});
       })
       .fail((jqXhr) => {
         this.actions.getHintsFail(jqXhr);

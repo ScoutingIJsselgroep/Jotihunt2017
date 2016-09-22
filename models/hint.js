@@ -13,6 +13,8 @@ var hintSchema = new mongoose.Schema({
   updated_at: Date
 });
 
+hintSchema.index({subarea: "text" });
+
 hintSchema.pre('save', function(next){
   // get the current date
   var currentDate = new Date();

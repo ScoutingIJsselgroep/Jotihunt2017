@@ -81,7 +81,12 @@ class AddHint extends React.Component {
     AddHintsActions.updateRdy(this.state.hints.rdx, event.target.value);
   }
 
+  addInfoWindow(){
+
+  }
+
   render () {
+    var infoWindow = this.addInfoWindow.bind(this);
     return (
       <div className='container'>
         <div className='row fadeInUp animated'>
@@ -124,7 +129,7 @@ class AddHint extends React.Component {
                       loadingMessage={'Be happy'}
                       params={{v: '3.exp', key: config.apiKey}}>
 
-                      {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, true, true)}
+                      {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
 
                       <InfoWindow
                         lat={this.state.hints.wsgx}

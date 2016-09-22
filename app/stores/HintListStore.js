@@ -5,12 +5,12 @@ class HintListStore {
   constructor() {
     this.bindActions(HintListActions);
     this.hintlist = [];
+    this.search = '';
   }
 
   onGetHintsSuccess(data) {
-    console.log("trigger");
-    console.log(data);
-    this.hintlist = data;
+    this.search = data.search;
+    this.hintlist = data.data;
   }
 
   onGetHintsFail(jqXhr) {

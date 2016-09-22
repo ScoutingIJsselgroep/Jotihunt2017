@@ -22,6 +22,7 @@ var config = require('./config');
 var routes = require('./app/routes');
 var Character = require('./models/character');
 var Hint = require('./models/hint');
+var Car = require('./models/car');
 
 var app = express();
 
@@ -189,18 +190,59 @@ app.get('/api/characters/top', function(req, res, next) {
     });
 });
 
+
+/**
+ * GET /api/cars
+ * Return a list of cars
+ */
+app.get('/api/cars', function(req, res, next) {
+    Car.find().sort({'location.created_at': 1}).exec(function (err, cars) {
+        if (err) return next(err);
+        let carslist = cars.map(function (car){
+            return car.location.map(function(location){
+                return({
+                    wsgx: location.wsgx,
+                    wsgy: location.wsgy,
+                    type: "car",
+                    saved: location.saved,
+                    userName: car.userName,
+                    userId: car.userId
+                });
+            });
+        });
+
+        res.send([].concat.apply([], carslist));
+    });
+});
+
 /**
  * GET /api/hints
  * Return a list of hints
  */
 app.get('/api/hints', function(req, res, next) {
-    Hint
-        .find({})
-        .exec(function(err, hint) {
-            if (err) return next(err);
+    var value = req.query.value;
+    var limit = req.query.limit ? req.query.limit : 2^31;
+    var searchTerm = new RegExp(".*" + value + ".*", 'i');
+    if (value) {
+        Hint
+            .find({$or: [{subarea: searchTerm}, {location: searchTerm}]})
+            .sort({created_at: -1})
+            .exec(function (err, hint) {
+                if (err) return next(err);
 
-            res.send(hint);
-        });
+                res.send(hint);
+            });
+    } else {
+        Hint
+            .find()
+            .sort({created_at: -1})
+            .limit(limit)
+            .exec(function (err, hint) {
+                if (err) return next(err);
+
+                res.send(hint);
+            });
+    }
 });
 
 /**
@@ -251,7 +293,56 @@ app.get('/api/characters/:id', function(req, res, next) {
 });
 
 /**
- * POST /api/characters
+ * POST /api/car
+ */
+app.post('/api/car', function(req, res, next){
+    var wsgx = req.body.wsgx;
+    var wsgy = req.body.wsgy;
+    var userId = req.body.userId;
+    console.log(req.body);
+
+    async.waterfall([
+        function (callback) {
+            Car.find({userId: userId}, function (err, cars) {
+                if(!cars.length) {
+                    var car = new Car({
+                        userId: userId,
+                        userName: "Tristan"
+                    });
+                    car.save(function (err) {
+                        if (err) return next(err);
+                        callback();
+                    });
+                }
+                callback();
+            });
+
+        },
+        function(callback) {
+            Car.find({userId: userId}, function (err, cars) {
+                console.log(JSON.stringify(cars));
+                for (var car in cars) {
+                    cars[car].location.push({
+                        wsgx: wsgx,
+                        wsgy: wsgy,
+                        saved: new Date()
+                    });
+                    cars[car].save(function (err) {
+                        if (err) {
+                            res.send({error: 'Locatie opslaan niet gelukt'});
+                        } else {
+                            res.send({message: 'Locatie is met succes toegevoegd.'});
+                        }
+                    });
+                }
+                callback();
+            });
+        }
+    ]);
+});
+
+/**
+ * POST /api/hints
  * Adds new character to the database.
  */
 app.post('/api/hints', function(req, res, next) {

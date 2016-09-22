@@ -1,12 +1,9 @@
 import React from 'react';
-import HintListStore from '../stores/HintListStore';
-import MapStore from '../stores/MapStore';
-import HintListActions from '../actions/HintListActions';
-import MapActions from '../actions/MapActions';
+import CarListStore from '../stores/CarListStore';
+import CarListActions from '../actions/CarListActions';
 import PointLayer from './PointLayer';
-import GetMapComponentsActions from '../actions/GetMapComponentsActions';
-import GetMapComponentsStore from '../stores/GetMapComponentsStore';
-import JHKmlLayer from './JHKmlLayer';
+import MapStore from '../stores/MapStore';
+import MapActions from '../actions/MapActions';
 
 
 
@@ -14,33 +11,27 @@ import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
 var config = require('./../../config');
 
-class MapHint extends React.Component {
+class MapCars extends React.Component {
 
   constructor (props) {
     super(props);
     this.state = {
-      hintlist: HintListStore.getState(),
+      carlist: CarListStore.getState(),
       mapOptions: MapStore.getState(),
-      mapConstructor: GetMapComponentsStore.getState(),
     };
-    this.forceUpdate = this.forceUpdate.bind(this);
-    this.onHintListChange = this.onHintListChange.bind(this);
+    this.onCarListChange = this.onCarListChange.bind(this);
     this.onMapChange = this.onMapChange.bind(this);
-    this.onMapComponentsChange = this.onMapComponentsChange.bind(this);
   }
 
   componentDidMount() {
-    HintListActions.getHints();
-    GetMapComponentsActions.getMapComponents();
-    HintListStore.listen(this.onHintListChange);
+    CarListStore.listen(this.onCarListChange);
     MapStore.listen(this.onMapChange);
-    GetMapComponentsStore.listen(this.onMapComponentsChange);
+    CarListActions.getCars();
   }
 
   componentWillUnmount() {
-    HintListStore.unlisten(this.onHintListChange);
+    CarListStore.unlisten(this.onCarListChange);
     MapStore.unlisten(this.onMapChange);
-    GetMapComponentsStore.unlisten(this.onMapComponentsChange);
   }
 
   onMapChange (state) {
@@ -49,16 +40,14 @@ class MapHint extends React.Component {
     });
   }
 
-  onMapComponentsChange (state) {
+  onCarListChange (state) {
     this.setState({
-      mapConstructor: state
+      carlist: state,
     });
   }
 
-  onHintListChange (state) {
-    this.setState({
-      hintlist: state,
-    });
+  refresh() {
+    CarListActions.getCars();
   }
 
   addInfoWindow (point) {
@@ -68,13 +57,7 @@ class MapHint extends React.Component {
       wsgx: point.wsgx,
       wsgy: point.wsgy
     }];
-
-    HintListActions.getHints();
     MapActions.addInfoWindow(object);
-  }
-
-  refresh() {
-    HintListActions.getHints();
   }
 
   render () {
@@ -84,21 +67,22 @@ class MapHint extends React.Component {
         <div className='row fadeInUp animated'>
           <div className='col-sm-12'>
             <div className='panel panel-default'>
-              <div className='panel-heading'>Hints op de kaart
+              <div className='panel-heading'>Auto's op de kaart
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
                   Refresh</small></div>
               <div className='panel-body'>
                 <Gmaps
                     width={'100%'}
                     height={'50em'}
-                    lat={this.state.mapOptions.wsgx}
-                    lng={this.state.mapOptions.wsgy}
-                    zoom={this.state.mapOptions.zoomLevel}
+                    lat={config.map.center.lat}
+                    lng={config.map.center.lng}
+                    zoom={config.map.center.zoom}
                     loadingMessage={'Map laden'}
-                    ref="Gmaps"
                     params={{v: '3.exp', key: config.apiKey}}>
-                  {PointLayer.render(this.state.hintlist.hintlist, {showLines: true}, infoWindow)}
-                  {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
+                  {PointLayer.render(this.state.carlist.carlist, {
+                    showLines: true,
+                    showFirst: false
+                  }, infoWindow)}
                   {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
                 </Gmaps>
               </div>
@@ -110,4 +94,4 @@ class MapHint extends React.Component {
   }
 }
 
-export default MapHint;
+export default MapCars;

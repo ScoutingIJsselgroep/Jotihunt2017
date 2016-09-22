@@ -5,6 +5,7 @@ import PointLayer from './PointLayer';
 
 
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
+var moment = require('moment');
 
 var config = require('./../../config');
 
@@ -20,7 +21,7 @@ class ListHint extends React.Component {
 
   componentDidMount() {
     HintListStore.listen(this.onHintListChange);
-    HintListActions.getHints();
+    HintListActions.getHints(this.state.hintlist.search);
   }
 
   componentWillUnmount() {
@@ -29,12 +30,17 @@ class ListHint extends React.Component {
 
   onHintListChange (state) {
     this.setState({
-      hintlist: state,
+      hintlist: state
     });
   }
 
   refresh() {
-    HintListActions.getHints();
+    console.log(this.state.hintlist.search);
+    HintListActions.getHints(this.state.hintlist.search);
+  }
+
+  search  (event) {
+    HintListActions.getHints(event.target.value)
   }
 
   render () {
@@ -42,9 +48,20 @@ class ListHint extends React.Component {
     let i;
     for (i in this.state.hintlist.hintlist){
       hintlist.push(
-          <div>
-            {this.state.hintlist.hintlist[i].wsgx}
-          </div>
+          <tr>
+            <td>
+              {this.state.hintlist.hintlist[i].subarea}
+            </td>
+            <td>
+              {moment(this.state.hintlist.hintlist[i].created_at).format("ddd HH:mm")}
+            </td>
+            <td>
+              {this.state.hintlist.hintlist[i].location}
+            </td>
+            <td>
+              {this.state.hintlist.hintlist[i].rdx} / {this.state.hintlist.hintlist[i].rdy}
+            </td>
+          </tr>
       );
     }
     return (
@@ -53,10 +70,32 @@ class ListHint extends React.Component {
           <div className='col-sm-12'>
             <div className='panel panel-default'>
               <div className='panel-heading'>Hints in een lijst
-                &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
-                  Refresh</small></div>
+                &nbsp; <small onClick={this.refresh.bind(this)}><i className="fa fa-refresh" aria-hidden="true"></i>
+                  Refresh</small>
+                  <input type="textbox" onChange={this.search} value={this.state.hintlist.search}/>
+              </div>
               <div className='panel-body'>
-                {hintlist}
+                <table className="table">
+                  <thead>
+                  <tr>
+                    <th>
+                      Deelgebied
+                    </th>
+                    <th>
+                      Tijd
+                    </th>
+                    <th>
+                      Locatie
+                    </th>
+                    <th>
+                      Rijksdriehoek
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {hintlist}
+                  </tbody>
+                  </table>
               </div>
             </div>
           </div>

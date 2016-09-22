@@ -34,17 +34,25 @@ module.exports = {
         }
     },
 
-    render(mapComponents, group = true, circle = true, subarea = true) {
+    render(mapComponents, group = true, circle = true, subarea = true, forceUpdate) {
         var result = [];
         for (var count in mapComponents){
             var it = mapComponents[count];
             switch (it.geometry.type){
                 case "Point":
                     if (group){
+                        let groupInfoWindow = {
+                            content: '<b>'+it.properties.name+'</b><br/>'+it.properties.extended +
+                            '<a class="button" href="google.navigation:q='+it.geometry.coordinates[1]+','+
+                            it.geometry.coordinates[0]+'"><i class="fa fa-location-arrow" aria-hidden="true"></i> Navigeer</a>',
+                            wsgx: it.geometry.coordinates[1],
+                            wsgy: it.geometry.coordinates[0]
+                        };
                         result.push(<Marker
                             lat={it.geometry.coordinates[1]}
                             lng={it.geometry.coordinates[0]}
                             draggable={false}
+                            onClick={forceUpdate.bind(this, groupInfoWindow)}
                             key={result.length}
                         />);
                         if (circle && it.properties.name.indexOf(config.circle.forGroup) !== -1){
@@ -69,6 +77,9 @@ module.exports = {
                         }
                         result.push(<Polygon
                            path={refactor}
+                           fillColor={'#'+it.properties.style}
+                           strokeColor={'#'+it.properties.style}
+                           fillOpacity:{config.map.fillOpacity}
                            key={result.length}
                         />);
                     }

@@ -7,6 +7,9 @@ import CharacterList from './components/CharacterList';
 import AddHint from './components/AddHint';
 import MapHint from './components/MapHint';
 import ListHint from './components/ListHint';
+import ListGroup from './components/ListGroup';
+import MapGroup from './components/MapGroup';
+import MapCars from './components/MapCars';
 
 export default (
   <Route component={App}>
@@ -16,6 +19,9 @@ export default (
     <Route path='/hint/add' component={AddHint} />
     <Route path='/hint/map' component={MapHint} />
     <Route path='/hint/list' component={ListHint} />
+    <Route path='/groups/map' component={MapGroup} />
+    <Route path='/groups/list' component={ListGroup} />
+    <Route path='/cars/map' component={MapCars} />
     <Route path=':category' component={CharacterList}>
       <Route path=':race' component={CharacterList}>
         <Route path=':bloodline' component={CharacterList} />
