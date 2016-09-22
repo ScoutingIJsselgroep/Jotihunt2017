@@ -198,7 +198,7 @@ app.get('/api/characters/top', function(req, res, next) {
 app.get('/api/cars', function(req, res, next) {
     Car.find().sort({'location.created_at': 1}).exec(function (err, cars) {
         if (err) return next(err);
-        let carslist = cars.map(function (car){
+        var carslist = cars.map(function (car){
             return car.location.map(function(location){
                 return({
                     wsgx: location.wsgx,
