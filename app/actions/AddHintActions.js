@@ -1,5 +1,7 @@
 import alt from '../alt';
 
+var SendMessages = require('./../helpers/sendMessages');
+
 var config = require('./../../config');
 var rdToWgs = require('rdtowgs');
 var googleMapsClient = require('@google/maps').createClient({
@@ -53,6 +55,15 @@ class AddCharacterActions {
   }
 
   addHint(rdx, rdy, wsgx, wsgy, location, subarea) {
+    SendMessages.sendMessage({
+      chat_id: config.telegramchats[subarea],
+      text: 'Nieuwe locatie voor ' + subarea + ': ' + location
+    });
+    SendMessages.sendLocation({
+      chat_id: config.telegramchats[subarea],
+      latitude: wsgx,
+      longitude: wsgy
+    });
     $.ajax({
       type: 'POST',
       url: '/api/hints',

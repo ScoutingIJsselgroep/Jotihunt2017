@@ -95,10 +95,10 @@ class Navbar extends React.Component {
             <li className='dropdown'>
               <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Auto's <span className='caret'></span></a>
               <ul className='dropdown-menu'>
-                <li><Link to='/car/add'>Auto met inzittenden aanmaken</Link></li>
+                <li><Link to='/cars/add'>Auto met inzittenden aanmaken</Link></li>
                 <li className='divider'></li>
-                <li><Link to='/car/list'>Lijst</Link></li>
-                <li><Link to='/car/map'>Kaart</Link></li>
+                <li><Link to='/cars/list'>Lijst</Link></li>
+                <li><Link to='/cars/map'>Kaart</Link></li>
               </ul>
             </li>
             <li className='dropdown'>

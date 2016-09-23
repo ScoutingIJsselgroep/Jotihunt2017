@@ -61,9 +61,9 @@ class AddHint extends React.Component {
     return (
       <div className='container'>
         <div className='row fadeInUp animated'>
-          <div className='col-sm-8'>
+          <div className='col-sm-12'>
             <div className='panel panel-default'>
-              <div className='panel-heading'>Hint Toevoegen</div>
+              <div className='panel-heading'>Scoutinggroepen</div>
               <div className='panel-body'>
                   <Gmaps
                       width={'100%'}

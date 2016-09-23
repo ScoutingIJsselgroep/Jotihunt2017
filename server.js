@@ -23,6 +23,8 @@ var routes = require('./app/routes');
 var Character = require('./models/character');
 var Hint = require('./models/hint');
 var Car = require('./models/car');
+var Poll = require('./models/poll');
+var poller = require('./app/helpers/poller');
 
 var app = express();
 
@@ -343,7 +345,7 @@ app.post('/api/car', function(req, res, next){
 
 /**
  * POST /api/hints
- * Adds new character to the database.
+ * Adds new hint to the database.
  */
 app.post('/api/hints', function(req, res, next) {
   var rdx = req.body.rdx;
@@ -551,7 +553,7 @@ io.sockets.on('connection', function(socket) {
 /**
  * Polling. Do this every now and then :)
  */
-
+poller.schedulePoll();
 
 
 server.listen(app.get('port'), function() {

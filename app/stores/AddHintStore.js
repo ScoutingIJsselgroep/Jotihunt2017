@@ -21,6 +21,8 @@ class AddHintStore {
   }
 
   onAddHintSuccess(successMessage) {
+    this.rdx = '';
+    this.rdy = '';
     this.rdxValidationState = 'has-success';
     this.rdxHelpBlock = successMessage;
   }

@@ -1,11 +1,13 @@
 import React from 'react';
 import CarListStore from '../stores/CarListStore';
 import CarListActions from '../actions/CarListActions';
+import GetMapComponentsStore from '../stores/GetMapComponentsStore';
+import GetMapComponentsActions from '../actions/GetMapComponentsActions';
 import PointLayer from './PointLayer';
 import MapStore from '../stores/MapStore';
 import MapActions from '../actions/MapActions';
 
-
+import JHKmlLayer from './JHKmlLayer';
 
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
@@ -16,22 +18,34 @@ class MapCars extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
+      mapConstructor: GetMapComponentsStore.getState(),
       carlist: CarListStore.getState(),
       mapOptions: MapStore.getState(),
     };
     this.onCarListChange = this.onCarListChange.bind(this);
+    this.onMapComponentsChange = this.onMapComponentsChange.bind(this);
     this.onMapChange = this.onMapChange.bind(this);
   }
 
   componentDidMount() {
     CarListStore.listen(this.onCarListChange);
+    GetMapComponentsStore.listen(this.onMapComponentsChange);
     MapStore.listen(this.onMapChange);
     CarListActions.getCars();
+    GetMapComponentsActions.getMapComponents();
+
   }
 
   componentWillUnmount() {
     CarListStore.unlisten(this.onCarListChange);
+    GetMapComponentsStore.unlisten(this.onMapComponentsChange);
     MapStore.unlisten(this.onMapChange);
+  }
+
+  onMapComponentsChange (state) {
+    this.setState({
+      mapConstructor: state
+    });
   }
 
   onMapChange (state) {
@@ -69,7 +83,7 @@ class MapCars extends React.Component {
             <div className='panel panel-default'>
               <div className='panel-heading'>Auto's op de kaart
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
-                  Refresh</small></div>
+                  &nbsp;Refresh</small></div>
               <div className='panel-body'>
                 <Gmaps
                     width={'100%'}
@@ -84,6 +98,7 @@ class MapCars extends React.Component {
                     showFirst: false
                   }, infoWindow)}
                   {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
+                  {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, false, false, true, infoWindow)}
                 </Gmaps>
               </div>
             </div>
