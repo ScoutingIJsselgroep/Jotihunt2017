@@ -11,7 +11,7 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "preinstall": "npm install apidoc -g",
-    "postinstall": "apidoc -i / -o public/apidoc/ && bower install && gulp build"
+    "postinstall": "apidoc -f server.js -o public/apidoc/ && bower install && gulp build"
   },
   "babel": {
     "presets": [

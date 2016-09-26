@@ -210,16 +210,12 @@ apiRoutes.get('/hints', function (req, res, next) {
 apiRoutes.post('/car', function (req, res, next) {
     var wsgx = req.body.wsgx;
     var wsgy = req.body.wsgy;
-    console.log((req.body));
 
     var userId = req.user.sub;
-
-    // TODO: Use Auth0.
 
     async.waterfall([
         function (callback) {
             management.getUsers({id: userId}, function (err, users) {
-                console.log(users);
                 callback(null, users.name);
             });
         },
