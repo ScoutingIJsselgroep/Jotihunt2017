@@ -34,6 +34,10 @@ class MapCars extends React.Component {
     CarListActions.getCars();
     GetMapComponentsActions.getMapComponents();
 
+    let socket = io.connect();
+    socket.on('updateCars', (data) => {
+      CarListActions.getCars();
+    });
   }
 
   componentWillUnmount() {

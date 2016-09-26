@@ -7,11 +7,12 @@ import MapHint from './components/MapHint';
 import ListHint from './components/ListHint';
 import ListGroup from './components/ListGroup';
 import MapGroup from './components/MapGroup';
+import Home from './components/Home';
 import MapCars from './components/MapCars';
 
 export default (
   <Route component={App}>
-    <Route path='/' component={ListHint} />
+    <Route path='/' component={Home} />
     <Route path='/stats' component={Stats} />
     <Route path='/hint/add' component={AddHint} />
     <Route path='/hint/map' component={MapHint} />

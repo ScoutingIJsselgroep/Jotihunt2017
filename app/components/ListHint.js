@@ -22,6 +22,10 @@ class ListHint extends React.Component {
   componentDidMount() {
     HintListStore.listen(this.onHintListChange);
     HintListActions.getHints(this.state.hintlist.search);
+    let socket = io.connect();
+    socket.on('updateHint', (data) => {
+      HintListActions.getHints();
+    });
   }
 
   componentWillUnmount() {

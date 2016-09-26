@@ -4,6 +4,7 @@ import MapStore from '../stores/MapStore';
 import HintListActions from '../actions/HintListActions';
 import MapActions from '../actions/MapActions';
 import PointLayer from './PointLayer';
+import FoxStatus from './FoxStatus';
 import GetMapComponentsActions from '../actions/GetMapComponentsActions';
 import GetMapComponentsStore from '../stores/GetMapComponentsStore';
 import JHKmlLayer from './JHKmlLayer';
@@ -35,6 +36,10 @@ class MapHint extends React.Component {
     HintListStore.listen(this.onHintListChange);
     MapStore.listen(this.onMapChange);
     GetMapComponentsStore.listen(this.onMapComponentsChange);
+    let socket = io.connect();
+    socket.on('updateHint', (data) => {
+      HintListActions.getHints();
+    });
   }
 
   componentWillUnmount() {
@@ -81,6 +86,7 @@ class MapHint extends React.Component {
     var infoWindow = this.addInfoWindow.bind(this);
     return (
       <div className='container'>
+        <FoxStatus />
         <div className='row fadeInUp animated'>
           <div className='col-sm-12'>
             <div className='panel panel-default'>

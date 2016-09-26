@@ -23,6 +23,7 @@ var routes = require('./app/routes');
 var Character = require('./models/character');
 var Hint = require('./models/hint');
 var Car = require('./models/car');
+var Poll = require('./models/poll');
 var poller = require('./app/helpers/poller');
 
 const jwt = require('express-jwt');
@@ -62,6 +63,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var apiRoutes = express.Router();
 apiRoutes.use(authCheck);
+
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+var onlineUsers = 0;
 
 /**
  * @api {get} /api/cars Get a list of cars.
@@ -167,6 +172,12 @@ apiRoutes.get('/hints', function (req, res, next) {
     }
 });
 
+apiRoutes.get("/foxstatus", function (req, res, next){
+   Poll.findOne({pollhook: "vossen"}).sort({created_at: -1}).exec(function(err, foxstatus){
+       res.send(JSON.parse(foxstatus.polldata));
+   })
+});
+
 /**
  * @api {post} /api/car Post a new car location.
  * @apiName PostCar
@@ -250,6 +261,10 @@ apiRoutes.post('/car', function (req, res, next) {
                 }
                 callback();
             });
+        },
+        function (callback) {
+            io.sockets.emit('updateCars');
+            callback();
         }
     ]);
 });
@@ -362,12 +377,13 @@ apiRoutes.post('/hints', function (req, res, next) {
 
                 hint.save(function (err) {
                     if (err) return next(err);
+                    io.sockets.emit('updateHint');
                     res.send({message: 'Hint is met succes toegevoegd.'});
                 });
             } catch (e) {
                 res.status(404).send({message: 'Er ging iets mis tijdens het toevoegen.'});
             }
-        }
+        },
     ]);
 });
 
@@ -516,10 +532,6 @@ app.use(function (err, req, res, next) {
 /**
  * Socket.io stuff.
  */
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-var onlineUsers = 0;
-
 io.sockets.on('connection', function (socket) {
     onlineUsers++;
 
@@ -534,7 +546,7 @@ io.sockets.on('connection', function (socket) {
 /**
  * Polling. Do this every now and then :)
  */
-poller.schedulePoll();
+poller.schedulePoll(io);
 
 server.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

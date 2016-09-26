@@ -5,18 +5,17 @@ var config = require('./../../config');
 var moment = require('moment');
 var md5 = require('md5');
 var Poll = require('./../../models/poll');
-var Hint = require('./../../models/hint');
 var SendMessages = require('./sendMessages');
 var async = require('async');
 var request = require('request');
 
 function sendMessage(previousdata, data, hook) {
+    console.log(previousdata);
     switch(hook){
         case "vossen":
             var messageList = [];
             for (var i in data){
-                if (!previousdata || (data[i].status != previousdata[i].status && data[i].team == previousdata[i].team)){
-
+                if (!previousdata || (data[i].status != previousdata.polldata[i].status && data[i].team == previousdata.polldata[i].team)){
                     messageList.push({
                         chat_id: config.telegramchats[data[i].team],
                         text: data[i].team + ' is net op ' + data[i].status + ' gesprongen.' + config.emoticons.status[data[i].status]
@@ -53,7 +52,7 @@ function sendMessage(previousdata, data, hook) {
     }
 }
 
-function callPoll(){
+function callPoll(io){
     var hooks = config.polling.hooks;
     for (var i = 0; i < hooks.length; i++){
         async.waterfall([
@@ -87,11 +86,13 @@ function callPoll(){
                 // Find the last known data
                 var hook = this.hook;
                 Poll.find({pollhook: this.hook}).sort({created_at: -1}).exec(function (err, pollMessages) {
-                    if(pollData.data && (!pollMessages.length || md5(pollData.data) != pollMessages[0].polldatahash)){
+                    if(pollData.data && (!pollMessages.length || md5(JSON.stringify(pollData.data)) != pollMessages[0].polldatahash)){
                         // New data! Send message and update stores!
                         sendMessage(pollMessages[0], pollData.data, hook);
+
                         // Update MongoDB
                         callback(null, pollData);
+
                     }
                 });
             }.bind({hook: hooks[i]}),
@@ -102,23 +103,17 @@ function callPoll(){
                 var poll = new Poll({
                     pollhash: md5CurrentTime,
                     created_at: new Date(),
-                    polldatahash: md5(pollData.data),
-                    polldata: pollData.data,
+                    polldatahash: md5(JSON.stringify(pollData.data)),
+                    polldata: JSON.stringify(pollData.data),
                     pollhook: this.hook
                 });
+                io.sockets.emit('foxStatus', {data: pollData.data});
 
                 poll.save(function(err){
 
                 });
-            }.bind({hook: hooks[i]})
+            }.bind({hook: hooks[i], io: io})
         ]);
-        // First, check if is in Database
-        // md5: md5(moment(formatwithoutSeconds)+hooks[i])
-        // if not exists, poll Jotihunt.net
-        // findLast(hook)
-        // If findLast == null || md5(data[0]) != findLast.messageMd5
-        // We've got a new one! Send a message!
-        // Insert poll into DB
     }
 }
 
@@ -126,9 +121,9 @@ module.exports = {
     /**
      * Schedules the polling service.
      */
-    schedulePoll () {
-        callPoll();
+    schedulePoll (io) {
+        callPoll(io);
         //setInterval(callPoll, config.polling.pollTime);
-        setInterval(callPoll, 1000);
+        setInterval(callPoll.bind(null, io), 1000);
     }
 }

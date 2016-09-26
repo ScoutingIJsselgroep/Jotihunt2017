@@ -27,8 +27,8 @@ module.exports = {
   subareas: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
   polling : {
     pollTime: 5*1000,
-    hooks: ["vossen", "opdracht", "nieuws", "hint"],
-    url: "http://jotihunt.net/api/1.0/"
+    hooks: ["vossen"],
+    url: "http://localhost:3003/"
   },
   emoticons: {
     status: {
