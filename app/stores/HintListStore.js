@@ -11,10 +11,19 @@ class HintListStore {
   onGetHintsSuccess(data) {
     this.search = data.search;
     this.hintlist = data.data;
+
   }
 
   onGetHintsFail(jqXhr) {
     toastr.error(jqXhr.responseJSON.message);
+  }
+
+  onHintDeleted(){
+    toastr.success("Hint is verwijderd.");
+  }
+
+  onHintDeleteFailed() {
+    toastr.error("Kon de hint niet verwijderen");
   }
 }
 

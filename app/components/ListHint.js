@@ -35,7 +35,6 @@ class ListHint extends React.Component {
   }
 
   refresh() {
-    console.log(this.state.hintlist.search);
     HintListActions.getHints(this.state.hintlist.search);
   }
 
@@ -43,9 +42,15 @@ class ListHint extends React.Component {
     HintListActions.getHints(event.target.value)
   }
 
+  deleteHint (id) {
+    HintListActions.deleteHint(id);
+    HintListActions.getHints(this.state.hintlist.search);
+  }
+
   render () {
     var hintlist = [];
     let i;
+    console.log(this.state.hintlist.hintlist);
     for (i in this.state.hintlist.hintlist){
       hintlist.push(
           <tr>
@@ -61,11 +66,14 @@ class ListHint extends React.Component {
             <td>
               {this.state.hintlist.hintlist[i].rdx} / {this.state.hintlist.hintlist[i].rdy}
             </td>
+            <td>
+              <button onClick={this.deleteHint.bind(this, this.state.hintlist.hintlist[i]._id)}>Verwijder</button>
+            </td>
           </tr>
       );
     }
     return (
-      <div className='container'>
+      <div className='container' lock={this.lock}>
         <div className='row fadeInUp animated'>
           <div className='col-sm-12'>
             <div className='panel panel-default'>

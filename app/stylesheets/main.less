@@ -618,6 +618,19 @@ label {
   animation-name: fadeIn;
 }
 
+@keyframes fadeHalfOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.fadeHalfOut {
+  animation-name: fadeHalfOut;
+}
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -716,6 +729,15 @@ label {
 @tricolor: @link-color;
 @triw: 10px;
 @trih: @triw*0.9;
+
+.foxlogo {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  height: @trih * 3;
+  width: @triw * 3;
+  transform: translate(-50%, -50%);
+}
 
 .triangles {
   position: absolute;

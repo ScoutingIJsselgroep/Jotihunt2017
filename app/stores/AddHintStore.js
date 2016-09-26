@@ -23,13 +23,14 @@ class AddHintStore {
   onAddHintSuccess(successMessage) {
     this.rdx = '';
     this.rdy = '';
-    this.rdxValidationState = 'has-success';
-    this.rdxHelpBlock = successMessage;
+    this.location = 'Vul eerst coördinaten in.';
+    toastr.success(successMessage);
   }
 
   onAddHintFail(errorMessage) {
     this.rdxValidationState = 'has-error';
     this.rdxHelpBlock = errorMessage;
+    toastr.success("De hint kon niet worden toegevoegd.");
   }
 
   onUpdateRdxSuccess(data) {

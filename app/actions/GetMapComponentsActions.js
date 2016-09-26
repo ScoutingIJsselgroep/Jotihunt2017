@@ -23,7 +23,6 @@ class GetMapComponentsActions {
     }
 
     getFilteredMapComponents(filter) {
-        console.log("tasdofn");
         let regexp = new RegExp(".*" + filter + ".*", 'i');
         let that = this;
         kml.toGeoJson(path.join(__dirname, './../../' + config.kml))

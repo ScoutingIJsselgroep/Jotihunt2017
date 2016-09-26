@@ -2,18 +2,24 @@ import React from 'react';
 import {Link} from 'react-router';
 import NavbarStore from '../stores/NavbarStore';
 import NavbarActions from '../actions/NavbarActions';
+import Login from './Login';
+
+var config = require('./../../config');
+var { loggedIn } = require('./../helpers/AuthService');
 
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = NavbarStore.getState();
-    this.onChange = this.onChange.bind(this);
+    this.state = {
+      navbar: NavbarStore.getState(),
+
+    };
+    this.onNavbarChange = this.onNavbarChange.bind(this);
   }
 
   componentDidMount() {
-    NavbarStore.listen(this.onChange);
-    NavbarActions.getCharacterCount();
 
+    NavbarStore.listen(this.onNavbarChange);
     let socket = io.connect();
 
     socket.on('onlineUsers', (data) => {
@@ -26,34 +32,59 @@ class Navbar extends React.Component {
 
     $(document).ajaxComplete(() => {
       setTimeout(() => {
-        NavbarActions.updateAjaxAnimation('fadeOut');
+        NavbarActions.updateAjaxAnimation('fadeHalfOut');
       }, 750);
     });
   }
 
   componentWillUnmount() {
-    NavbarStore.unlisten(this.onChange);
+    NavbarStore.unlisten(this.onNavbarChange);
   }
 
-  onChange(state) {
-    this.setState(state);
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-
-    let searchQuery = this.state.searchQuery.trim();
-
-    if (searchQuery) {
-      NavbarActions.findCharacter({
-        searchQuery: searchQuery,
-        searchForm: this.refs.searchForm,
-        history: this.props.history
-      });
-    }
+  onNavbarChange(state) {
+    this.setState({navbar: state});
   }
 
   render() {
+    var navbar;
+    if(loggedIn()){
+      navbar =  <ul className='nav navbar-nav'>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/help'>Help</Link></li>
+        <li className='dropdown'>
+          <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Hints <span className='caret'></span></a>
+          <ul className='dropdown-menu'>
+            <li><Link to='/hint/add'>Hint toevoegen</Link></li>
+            <li className='divider'></li>
+            <li><Link to='/hint/list'>Lijst</Link></li>
+            <li><Link to='/hint/map'>Kaart</Link></li>
+          </ul>
+        </li>
+        <li className='dropdown'>
+          <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Auto's <span className='caret'></span></a>
+          <ul className='dropdown-menu'>
+            <li><Link to='/cars/add'>Auto met inzittenden aanmaken</Link></li>
+            <li className='divider'></li>
+            <li><Link to='/cars/list'>Lijst</Link></li>
+            <li><Link to='/cars/map'>Kaart</Link></li>
+          </ul>
+        </li>
+        <li className='dropdown'>
+          <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Scoutinggroepen <span className='caret'></span></a>
+          <ul className='dropdown-menu'>
+            <li><Link to='/groups/list'>Lijst</Link></li>
+            <li><Link to='/groups/map'>Kaart</Link></li>
+          </ul>
+        </li>
+        <li><Link to='/hint/add'>Massive map</Link></li>
+        <Login />
+      </ul>;
+    } else {
+      navbar =  <ul className='nav navbar-nav'>
+        <li><Link to='/'>Home</Link></li>
+        <Login />
+      </ul>;
+    }
     return (
       <nav className='navbar navbar-default navbar-static-top'>
         <div className='navbar-header'>
@@ -64,52 +95,14 @@ class Navbar extends React.Component {
             <span className='icon-bar'></span>
           </button>
           <Link to='/' className='navbar-brand'>
-            <span className={'triangles animated ' + this.state.ajaxAnimationClass}>
-              <div className='tri invert'></div>
-              <div className='tri invert'></div>
-              <div className='tri'></div>
-              <div className='tri invert'></div>
-              <div className='tri invert'></div>
-              <div className='tri'></div>
-              <div className='tri invert'></div>
-              <div className='tri'></div>
-              <div className='tri invert'></div>
-            </span>
+
+            <img src="/img/logo_64.png" className={'foxlogo animated ' + this.state.navbar.ajaxAnimationClass} />
             Jotihunt.JS
-            <span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>
+            <span className='badge badge-up badge-danger'>{this.state.navbar.onlineUsers}</span>
           </Link>
         </div>
         <div id='navbar' className='navbar-collapse collapse'>
-          <ul className='nav navbar-nav'>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/help'>Help</Link></li>
-            <li className='dropdown'>
-              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Hints <span className='caret'></span></a>
-              <ul className='dropdown-menu'>
-                <li><Link to='/hint/add'>Hint toevoegen</Link></li>
-                <li className='divider'></li>
-                <li><Link to='/hint/list'>Lijst</Link></li>
-                <li><Link to='/hint/map'>Kaart</Link></li>
-              </ul>
-            </li>
-            <li className='dropdown'>
-              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Auto's <span className='caret'></span></a>
-              <ul className='dropdown-menu'>
-                <li><Link to='/cars/add'>Auto met inzittenden aanmaken</Link></li>
-                <li className='divider'></li>
-                <li><Link to='/cars/list'>Lijst</Link></li>
-                <li><Link to='/cars/map'>Kaart</Link></li>
-              </ul>
-            </li>
-            <li className='dropdown'>
-              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Scoutinggroepen <span className='caret'></span></a>
-              <ul className='dropdown-menu'>
-                <li><Link to='/groups/list'>Lijst</Link></li>
-                <li><Link to='/groups/map'>Kaart</Link></li>
-              </ul>
-            </li>
-            <li><Link to='/hint/add'>Massive map</Link></li>
-          </ul>
+          {navbar}
         </div>
       </nav>
     );

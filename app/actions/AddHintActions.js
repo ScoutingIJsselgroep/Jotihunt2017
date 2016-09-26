@@ -2,6 +2,9 @@ import alt from '../alt';
 
 var SendMessages = require('./../helpers/sendMessages');
 
+import AuthStore from './../stores/AuthStore';
+
+
 var config = require('./../../config');
 var rdToWgs = require('rdtowgs');
 var googleMapsClient = require('@google/maps').createClient({
@@ -55,27 +58,31 @@ class AddCharacterActions {
   }
 
   addHint(rdx, rdy, wsgx, wsgy, location, subarea) {
-    SendMessages.sendMessage({
-      chat_id: config.telegramchats[subarea],
-      text: 'Nieuwe locatie voor ' + subarea + ': ' + location
-    });
-    SendMessages.sendLocation({
-      chat_id: config.telegramchats[subarea],
-      latitude: wsgx,
-      longitude: wsgy
-    });
-    $.ajax({
-      type: 'POST',
-      url: '/api/hints',
-      data: { rdx: rdx, rdy: rdy, wsgx: wsgx, wsgy: wsgy, location: location, subarea: subarea}
-    })
-      .done((data) => {
-        this.actions.addHintSuccess(data.message);
-      })
-      .fail((jqXhr) => {
-        this.actions.addHintFail(jqXhr.responseJSON.message);
+      SendMessages.sendMessage({
+        chat_id: config.telegramchats[subarea],
+        text: 'Nieuwe locatie voor ' + subarea + ': ' + location
       });
+      SendMessages.sendLocation({
+        chat_id: config.telegramchats[subarea],
+        latitude: wsgx,
+        longitude: wsgy
+      });
+      $.ajax({
+        type: 'POST',
+        url: '/api/hints',
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader ("Authorization", "Bearer " + AuthStore.getState().jwtkey);
+        },
+        data: {rdx: rdx, rdy: rdy, wsgx: wsgx, wsgy: wsgy, location: location, subarea: subarea}
+      })
+          .done((data) => {
+            this.actions.addHintSuccess(data.message);
+          })
+          .fail((jqXhr) => {
+            this.actions.addHintFail(jqXhr.responseJSON.message);
+          });
   }
+
 }
 
 module.exports = alt.createActions(AddCharacterActions);

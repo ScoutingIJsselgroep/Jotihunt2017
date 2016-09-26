@@ -3,7 +3,7 @@
  */
 var config = require('./../../config');
 var moment = require('moment');
-var md5 = require('js-md5');
+var md5 = require('md5');
 var Poll = require('./../../models/poll');
 var Hint = require('./../../models/hint');
 var SendMessages = require('./sendMessages');
@@ -42,6 +42,7 @@ function sendMessage(previousdata, data, hook) {
             });
             break;
         case "hint":
+            var messageList = [];
             for (var i in config.subareas){
                 messageList.push({
                     chat_id: config.subareas[i],
@@ -79,17 +80,16 @@ function callPoll(){
                     if (!error && response.statusCode == 200) {
                         callback(null, JSON.parse(body));
                     }
-                }).bind({hook: this.hook});
+                });
             }.bind({hook: hooks[i]}),
 
             function (pollData, callback) {
                 // Find the last known data
                 var hook = this.hook;
                 Poll.find({pollhook: this.hook}).sort({created_at: -1}).exec(function (err, pollMessages) {
-                    if(!pollMessages.length || md5(pollData.data) != pollMessages[0].polldatahash){
+                    if(pollData.data && (!pollMessages.length || md5(pollData.data) != pollMessages[0].polldatahash)){
                         // New data! Send message and update stores!
                         sendMessage(pollMessages[0], pollData.data, hook);
-
                         // Update MongoDB
                         callback(null, pollData);
                     }

@@ -1,6 +1,15 @@
 module.exports = {
   database: process.env.MONGO_URI || 'localhost',
   apiKey: 'AIzaSyAkawcLmt0FpyP2VIv3MkxHO5z0iJlPCI4',
+  auth: {
+    language: 'en',
+    url: 'tristandb.eu.auth0.com',
+    clientid: 'PvEyr2STO6J1rcvy8NqwwLHDasXc3N01',
+    logo: '/img/logo_64.png',
+    title: "Jotihunt.js Inloggen",
+    secret: "HdpRjdTKKMrGH0s8MGHLLypHFwcSMI6KPhwrafotx134TSBLjolfPXFkeKENpN36",
+    audience: 'PvEyr2STO6J1rcvy8NqwwLHDasXc3N01'
+  },
   circle: {
     forGroup: 'Karel',
     radius: 500
