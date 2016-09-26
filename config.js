@@ -8,7 +8,8 @@ module.exports = {
     logo: '/img/logo_64.png',
     title: "Jotihunt.js Inloggen",
     secret: "HdpRjdTKKMrGH0s8MGHLLypHFwcSMI6KPhwrafotx134TSBLjolfPXFkeKENpN36",
-    audience: 'PvEyr2STO6J1rcvy8NqwwLHDasXc3N01'
+    audience: 'PvEyr2STO6J1rcvy8NqwwLHDasXc3N01',
+    apitoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpbVBnM044VDRHNHNuZ0Q3Um9DY0I0MXAwQ2ZJNm1xSCIsInNjb3BlcyI6eyJ1c2VycyI6eyJhY3Rpb25zIjpbInJlYWQiXX19LCJpYXQiOjE0NzQ5MjI4MTYsImp0aSI6ImVmMjgyYWIzNzMyZThiNzNhMDJhMWYxOWQ3Y2I1N2JlIn0.zA6BHsdZFqABnayFu2SvOq1foTa1HCFLTa2XzETrsP4'
   },
   circle: {
     forGroup: 'Karel',

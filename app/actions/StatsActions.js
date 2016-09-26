@@ -1,4 +1,5 @@
 import alt from '../alt';
+import AuthStore from './../stores/AuthStore';
 
 class StatsActions {
     constructor() {

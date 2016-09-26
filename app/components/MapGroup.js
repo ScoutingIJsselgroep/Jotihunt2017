@@ -74,7 +74,7 @@ class AddHint extends React.Component {
                       loadingMessage={'Map laden'}
                       params={{v: '3.exp', key: config.apiKey}}>
 
-                      {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
+                      {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, true, true, infoWindow)}
                       {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
                   </Gmaps>
               </div>

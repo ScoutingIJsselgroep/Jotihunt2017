@@ -1,4 +1,6 @@
 import alt from '../alt';
+import AuthStore from './../stores/AuthStore';
+
 
 var kml = require('gtran-kml-data');
 kml.setPromiseLib(require('bluebird'));

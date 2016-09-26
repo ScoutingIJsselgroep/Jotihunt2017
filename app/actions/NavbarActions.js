@@ -1,5 +1,7 @@
 import alt from '../alt';
 import {assign} from 'underscore';
+import AuthStore from './../stores/AuthStore';
+
 
 class NavbarActions {
   constructor() {
