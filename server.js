@@ -23,13 +23,10 @@ var routes = require('./app/routes');
 var Character = require('./models/character');
 var Hint = require('./models/hint');
 var Car = require('./models/car');
-var Poll = require('./models/poll');
 var poller = require('./app/helpers/poller');
 
 const jwt = require('express-jwt');
 const cors = require('cors');
-
-var {loggedIn} = require('./app/helpers/AuthService');
 
 var app = express();
 app.use(cors());
