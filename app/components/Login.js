@@ -25,7 +25,7 @@ class Login extends React.Component {
             languageDictionary: {
                 title: config.auth.title
             },
-            closable: false
+            closable: true
         };
         // Configure Auth0
         this.lock = new Auth0Lock(config.auth.audience, config.auth.url, options);

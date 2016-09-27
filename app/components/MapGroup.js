@@ -65,14 +65,15 @@ class AddHint extends React.Component {
             <div className='panel panel-default'>
               <div className='panel-heading'>Scoutinggroepen</div>
               <div className='panel-body'>
-                  <Gmaps
+                <input id="pac-input" className="controls fadeInUp animated" type="text" placeholder="Zoeken" />
+                <Gmaps
                       width={'100%'}
                       height={'50em'}
                       lat={config.map.center.lat}
                       lng={config.map.center.lng}
                       zoom={config.map.center.zoom}
                       loadingMessage={'Map laden'}
-                      params={{v: '3.exp', key: config.apiKey}}>
+                      params={{v: '3.exp', key: config.apiKey, libraries: 'places'}}>
 
                       {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, true, true, infoWindow)}
                       {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}

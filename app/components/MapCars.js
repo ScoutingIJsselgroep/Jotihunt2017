@@ -89,6 +89,7 @@ class MapCars extends React.Component {
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
                   &nbsp;Refresh</small></div>
               <div className='panel-body'>
+                <input id="pac-input" className="controls fadeInUp animated" type="text" placeholder="Zoeken" />
                 <Gmaps
                     width={'100%'}
                     height={'50em'}
@@ -96,7 +97,7 @@ class MapCars extends React.Component {
                     lng={config.map.center.lng}
                     zoom={config.map.center.zoom}
                     loadingMessage={'Map laden'}
-                    params={{v: '3.exp', key: config.apiKey}}>
+                    params={{v: '3.exp', key: config.apiKey, libraries: 'places'}}>
                   {PointLayer.render(this.state.carlist.carlist, {
                     showLines: true,
                     showFirst: false

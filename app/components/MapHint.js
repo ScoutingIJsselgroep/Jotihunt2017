@@ -94,6 +94,7 @@ class MapHint extends React.Component {
                 &nbsp; <small onClick={this.refresh}><i className="fa fa-refresh" aria-hidden="true"></i>
                   Refresh</small></div>
               <div className='panel-body'>
+                <input id="pac-input" className="controls fadeInUp animated" type="text" placeholder="Zoeken" />
                 <Gmaps
                     width={'100%'}
                     height={'50em'}
@@ -102,7 +103,7 @@ class MapHint extends React.Component {
                     zoom={this.state.mapOptions.zoomLevel}
                     loadingMessage={'Map laden'}
                     ref="Gmaps"
-                    params={{v: '3.exp', key: config.apiKey}}>
+                    params={{v: '3.exp', key: config.apiKey, libaries: 'places'}}>
                   {PointLayer.render(this.state.hintlist.hintlist, {showLines: true}, infoWindow)}
                   {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
                   {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
