@@ -8,6 +8,9 @@ import ListHint from './components/ListHint';
 import ListGroup from './components/ListGroup';
 import MapGroup from './components/MapGroup';
 import Home from './components/Home';
+import Help from './components/Help';
+import Passwords from './components/Passwords';
+import MassiveMap from './components/MassiveMap';
 import MapCars from './components/MapCars';
 var { loggedIn } = require('./helpers/AuthService');
 
@@ -23,11 +26,14 @@ export default (
   <Route component={App}>
     <Route path='/' component={Home} />
     <Route path='/stats' component={Stats} onEnter={requireAuth} />
+    <Route path='/help' component={Help} />
+    <Route path='/passwords' component={Passwords} onEnter={requireAuth} />
     <Route path='/hint/add' component={AddHint} onEnter={requireAuth} />
     <Route path='/hint/map' component={MapHint} onEnter={requireAuth} />
     <Route path='/hint/list' component={ListHint} onEnter={requireAuth} />
     <Route path='/groups/map' component={MapGroup} onEnter={requireAuth} />
     <Route path='/groups/list' component={ListGroup} onEnter={requireAuth} />
     <Route path='/cars/map' component={MapCars} onEnter={requireAuth} />
+    <Route path='/massivemap' component={MassiveMap} onEnter={requireAuth} />
   </Route>
 );

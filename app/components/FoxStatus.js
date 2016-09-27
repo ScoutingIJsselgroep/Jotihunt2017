@@ -40,10 +40,19 @@ class ListHint extends React.Component {
         let i;
         console.log(this.state.foxstatus.subareas);
         for (i in this.state.foxstatus.subareas) {
+            var className;
+            if (this.state.foxstatus.subareas[i].status == "rood") {
+                className = "btn-danger";
+            } else if (this.state.foxstatus.subareas[i].status == "oranje") {
+                className = "btn-warning";
+            } else if (this.state.foxstatus.subareas[i].status == "groen") {
+                className = "btn-success";
+            }
             foxlist.push(
                 <td>
-                    {this.state.foxstatus.subareas[i].team}
-                    {this.state.foxstatus.subareas[i].status}
+                    <button type="button" className={'btn btn-lg btn-block ' + className}>
+                        {this.state.foxstatus.subareas[i].team}
+                    </button>
                 </td>
             );
         }
@@ -51,17 +60,13 @@ class ListHint extends React.Component {
 
             <div className='row fadeInUp animated'>
                 <div className='col-sm-12'>
-                    <div className='panel panel-default'>
-                        <div className='panel-body'>
-                            <table className="table">
-                                <tbody>
-                                <tr>
-                                {foxlist}
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <table className="table">
+                        <tbody>
+                        <tr>
+                            {foxlist}
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 

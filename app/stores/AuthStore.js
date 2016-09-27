@@ -18,6 +18,7 @@ class AuthStore {
 
         this.jwtkey = data.token;
         this.authenticated = true;
+        this.emitChange();
     }
 
     onLogout() {
@@ -26,6 +27,7 @@ class AuthStore {
         toastr.success("Je bent met succes uitgelogd.");
         this.authenticated = false;
         this.jwtkey = '';
+        this.emitChange();
     }
 }
 

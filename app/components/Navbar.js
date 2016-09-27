@@ -1,8 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router';
 import NavbarStore from '../stores/NavbarStore';
+import AuthStore from '../stores/AuthStore';
 import NavbarActions from '../actions/NavbarActions';
 import Login from './Login';
+import Passwords from './Passwords';
 
 var config = require('./../../config');
 var { loggedIn } = require('./../helpers/AuthService');
@@ -12,14 +14,16 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       navbar: NavbarStore.getState(),
-
+      authenticated: AuthStore.getState(),
     };
     this.onNavbarChange = this.onNavbarChange.bind(this);
+    this.onAuthChange = this.onAuthChange.bind(this);
   }
 
   componentDidMount() {
 
     NavbarStore.listen(this.onNavbarChange);
+    NavbarStore.listen(this.onAuthChange);
     let socket = io.connect();
 
     socket.on('onlineUsers', (data) => {
@@ -39,6 +43,13 @@ class Navbar extends React.Component {
 
   componentWillUnmount() {
     NavbarStore.unlisten(this.onNavbarChange);
+    AuthStore.unlisten(this.onAuthChange);
+  }
+
+  onAuthChange(state){
+    this.setState({
+      authenticated: state
+    });
   }
 
   onNavbarChange(state) {
@@ -47,9 +58,10 @@ class Navbar extends React.Component {
 
   render() {
     var navbar;
-    if(loggedIn()){
+    if(AuthStore.getState().authenticated && loggedIn()){
       navbar =  <ul className='nav navbar-nav'>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/passwords'>Wachtwoorden</Link></li>
         <li><Link to='/help'>Help</Link></li>
         <li className='dropdown'>
           <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Hints <span className='caret'></span></a>
@@ -63,9 +75,6 @@ class Navbar extends React.Component {
         <li className='dropdown'>
           <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Auto's <span className='caret'></span></a>
           <ul className='dropdown-menu'>
-            <li><Link to='/cars/add'>Auto met inzittenden aanmaken</Link></li>
-            <li className='divider'></li>
-            <li><Link to='/cars/list'>Lijst</Link></li>
             <li><Link to='/cars/map'>Kaart</Link></li>
           </ul>
         </li>
@@ -76,12 +85,13 @@ class Navbar extends React.Component {
             <li><Link to='/groups/map'>Kaart</Link></li>
           </ul>
         </li>
-        <li><Link to='/hint/add'>Massive map</Link></li>
+        <li><Link to='/massivemap'>Massive map</Link></li>
         <Login />
       </ul>;
     } else {
       navbar =  <ul className='nav navbar-nav'>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/help'>Help</Link></li>
         <Login />
       </ul>;
     }

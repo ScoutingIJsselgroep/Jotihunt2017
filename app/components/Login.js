@@ -13,6 +13,8 @@ class Login extends React.Component {
         this.state = {
             authenticated: AuthStore.getState(),
         };
+        this.onAuthChange = this.onAuthChange.bind(this);
+
     }
     componentDidMount() {
         AuthStore.listen(this.onAuthChange);
@@ -35,6 +37,9 @@ class Login extends React.Component {
         // binds login functions to keep this context
         this.login = this.login.bind(this);
         this.logout = this.logout.bind(this);
+    }
+    componentWillUnmount() {
+        AuthStore.unlisten(this.onAuthChange);
     }
 
     onAuthChange(state){
@@ -66,14 +71,7 @@ class Login extends React.Component {
         if (!AuthStore.getState().authenticated) {
             return (<li className="pull-right" onClick={this.login}><a>Login</a></li>);
         } else {
-            return (<li className='dropdown pull-right'>
-                <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Account <span className='caret'></span></a>
-                <ul className='dropdown-menu'>
-                    <li><Link to='/hint/add'>Opties</Link></li>
-                    <li className='divider'></li>
-                    <li><Link to='/' onClick={this.logout}>Uitloggen</Link></li>
-                </ul>
-            </li>);
+            return (<li><Link to='/' onClick={this.logout}>Uitloggen</Link></li>);
         }
     }
 }

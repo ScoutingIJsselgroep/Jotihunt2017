@@ -8,8 +8,8 @@ import FoxStatus from './FoxStatus';
 import GetMapComponentsActions from '../actions/GetMapComponentsActions';
 import GetMapComponentsStore from '../stores/GetMapComponentsStore';
 import JHKmlLayer from './JHKmlLayer';
-
-
+import CarListStore from '../stores/CarListStore';
+import CarListActions from '../actions/CarListActions';
 
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
@@ -22,15 +22,19 @@ class MapHint extends React.Component {
     this.state = {
       hintlist: HintListStore.getState(),
       mapOptions: MapStore.getState(),
+      carlist: CarListStore.getState(),
       mapConstructor: GetMapComponentsStore.getState(),
     };
     this.forceUpdate = this.forceUpdate.bind(this);
     this.onHintListChange = this.onHintListChange.bind(this);
+    this.onCarListChange = this.onCarListChange.bind(this);
     this.onMapChange = this.onMapChange.bind(this);
     this.onMapComponentsChange = this.onMapComponentsChange.bind(this);
   }
 
   componentDidMount() {
+    CarListStore.listen(this.onCarListChange);
+    CarListActions.getCars();
     HintListActions.getHints();
     GetMapComponentsActions.getMapComponents();
     HintListStore.listen(this.onHintListChange);
@@ -40,9 +44,13 @@ class MapHint extends React.Component {
     socket.on('updateHint', (data) => {
       HintListActions.getHints();
     });
+    socket.on('updateCars', (data) => {
+      CarListActions.getCars();
+    });
   }
 
   componentWillUnmount() {
+    CarListStore.unlisten(this.onCarListChange);
     HintListStore.unlisten(this.onHintListChange);
     MapStore.unlisten(this.onMapChange);
     GetMapComponentsStore.unlisten(this.onMapComponentsChange);
@@ -78,8 +86,15 @@ class MapHint extends React.Component {
     MapActions.addInfoWindow(object);
   }
 
+  onCarListChange(state) {
+    this.setState({
+      carlist: state,
+    });
+  }
+
   refresh() {
     HintListActions.getHints();
+    CarListActions.getCars();
   }
 
   render () {
@@ -109,6 +124,10 @@ class MapHint extends React.Component {
                   {PointLayer.render(this.state.hintlist.hintlist, {showLines: true}, infoWindow)}
                   {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
                   {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
+                  {PointLayer.render(this.state.carlist.carlist, {
+                    showLines: true,
+                    showFirst: false
+                  }, infoWindow)}
                 </Gmaps>
               </div>
             </div>

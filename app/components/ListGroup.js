@@ -61,8 +61,7 @@ class AddHint extends React.Component {
           <div className='col-sm-12'>
             <div className='panel panel-default'>
               <div className='panel-heading'>Lijst van scoutinggroepen
-                <input type="textbox" value={this.state.mapConstructor.filter} onChange={this.filter}/>
-                <small>Tip: vul "Alpha" in.</small>
+                <input type="textbox" className="form-control" placeholder="Zoeken. Tip: vul 'Alpha' in." value={this.state.mapConstructor.filter} onChange={this.filter}/>
               </div>
               <div className='panel-body'>
                 <table className="table">

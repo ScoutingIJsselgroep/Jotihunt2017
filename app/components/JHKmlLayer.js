@@ -49,6 +49,7 @@ module.exports = {
                             wsgy: it.geometry.coordinates[0]
                         };
                         result.push(<Marker
+                            icon="/img/scouting.gif"
                             lat={it.geometry.coordinates[1]}
                             lng={it.geometry.coordinates[0]}
                             draggable={false}
