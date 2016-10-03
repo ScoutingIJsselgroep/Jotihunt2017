@@ -51,9 +51,9 @@ module.exports = {
     kml: '2015.kml',
     subareas: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
     polling: {
-        pollTime: 5 * 1000,
-        hooks: ["vossen"],
-        url: "http://localhost:3003/"
+        pollTime: 15 * 1000,
+        hooks: ["vossen","opdracht","hint","nieuws"],
+        url: "http://jotihunt.net/api/1.0/"
     },
     form: "https://docs.google.com/forms/d/e/1FAIpQLScwDHxjAMMpU_FxLkU5zEyD-Nw49L9ALLpLpdwmAyl6QG5soQ/viewform",
     emoticons: {
