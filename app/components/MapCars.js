@@ -13,6 +13,10 @@ import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
 var config = require('./../../config');
 
+var lat = config.map.center.lat;
+var lng = config.map.center.lng;
+var zoom = config.map.center.zoom;
+
 class MapCars extends React.Component {
 
     constructor(props) {
@@ -25,6 +29,13 @@ class MapCars extends React.Component {
         this.onCarListChange = this.onCarListChange.bind(this);
         this.onMapComponentsChange = this.onMapComponentsChange.bind(this);
         this.onMapChange = this.onMapChange.bind(this);
+        this.boundsChanged = this.boundsChanged.bind(this);
+    }
+
+    boundsChanged(){
+        lat = this.refs.Gmaps.map.center.lat();
+        lng = this.refs.Gmaps.map.center.lng();
+        zoom = this.refs.Gmaps.map.zoom;
     }
 
     componentDidMount() {
@@ -97,10 +108,12 @@ class MapCars extends React.Component {
                                 <Gmaps
                                     width={'100%'}
                                     height={'50em'}
-                                    lat={config.map.center.lat}
-                                    lng={config.map.center.lng}
-                                    zoom={config.map.center.zoom}
+                                    lat={lat}
+                                    lng={lng}
+                                    zoom={zoom}
                                     loadingMessage={'Map laden'}
+                                    onBoundsChanged={this.boundsChanged}
+                                    ref="Gmaps"
                                     params={{v: '3.exp', key: config.apiKey, libraries: 'places'}}>
                                     {PointLayer.render(this.state.carlist.carlist, {
                                         showLines: true,

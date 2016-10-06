@@ -20,7 +20,6 @@ class ListHint extends React.Component {
         FoxStatusStore.listen(this.onFoxStatusChange);
         FoxStatusAction.getFoxStatus();
         socket.on('foxStatus', (data) => {
-            console.log(data);
             FoxStatusAction.updateFoxStatus(data);
         });
     }
@@ -38,7 +37,6 @@ class ListHint extends React.Component {
     render() {
         var foxlist = [];
         let i;
-        console.log(this.state.foxstatus.subareas);
         for (i in this.state.foxstatus.subareas) {
             var className;
             if (this.state.foxstatus.subareas[i].status == "rood") {

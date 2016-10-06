@@ -18,6 +18,7 @@ class Navbar extends React.Component {
     };
     this.onNavbarChange = this.onNavbarChange.bind(this);
     this.onAuthChange = this.onAuthChange.bind(this);
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
@@ -41,6 +42,10 @@ class Navbar extends React.Component {
     });
   }
 
+  update(){
+    this.forceUpdate();
+  }
+
   componentWillUnmount() {
     NavbarStore.unlisten(this.onNavbarChange);
     AuthStore.unlisten(this.onAuthChange);
@@ -50,6 +55,7 @@ class Navbar extends React.Component {
     this.setState({
       authenticated: state
     });
+    this.forceUpdate();
   }
 
   onNavbarChange(state) {
@@ -86,13 +92,13 @@ class Navbar extends React.Component {
           </ul>
         </li>
         <li><Link to='/massivemap'>Massive map</Link></li>
-        <Login />
+        <Login update={this.forceUpdate}/>
       </ul>;
     } else {
       navbar =  <ul className='nav navbar-nav'>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/help'>Help</Link></li>
-        <Login />
+        <Login update={this.forceUpdate} />
       </ul>;
     }
     return (

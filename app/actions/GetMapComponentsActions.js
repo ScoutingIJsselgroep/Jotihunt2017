@@ -32,18 +32,7 @@ class GetMapComponentsActions {
                 var filtered = [];
 
                 for (var i = 0; i < fc.features.length; i++) {
-                    let stripped = fc.features[i].properties.extended.replace("<![CDATA[", "").replace("]]>", "").replace(/<\/?[^>]+(>|$)/g, "").replace(/\s/g, "");
-                    stripped = stripped.charAt(stripped.length - 1);
-                    const subareas = config.subareas;
-                    for(let subarea in subareas){
-                        if (subareas[subarea].charAt(0) == stripped){
-                            stripped = subareas[subarea];
-                            break;
-                        }
-                    }
-                    console.log(stripped);
-                    if (regexp.test(fc.features[i].properties.extended) || regexp.test(fc.features[i].properties.name)|| filter == stripped ) {
-                        fc.features[i].properties.subarea = stripped;
+                    if (regexp.test(fc.features[i].properties.description) || regexp.test(fc.features[i].properties.name)) {
                         filtered.push(fc.features[i]);
                     }
                 }

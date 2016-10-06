@@ -54,7 +54,6 @@ class ListHint extends React.Component {
     render() {
         var hintlist = [];
         let i;
-        console.log(this.state.hintlist.hintlist);
         for (i in this.state.hintlist.hintlist) {
             hintlist.push(
                 <tr>

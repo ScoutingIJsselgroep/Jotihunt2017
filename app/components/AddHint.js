@@ -4,6 +4,8 @@ import GetMapComponentsStore from '../stores/GetMapComponentsStore';
 import AddHintsActions from '../actions/AddHintActions';
 import GetMapComponentsActions from '../actions/GetMapComponentsActions';
 
+var moment = require('moment');
+
 import JHKmlLayer from './JHKmlLayer';
 
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
@@ -69,7 +71,7 @@ class AddHint extends React.Component {
     }
 
     if (rdx && rdy && subarea) {
-      AddHintsActions.addHint(rdx, rdy, wsgx, wsgy, location, subarea);
+      AddHintsActions.addHint(rdx, rdy, wsgx, wsgy, location, subarea, "hint");
     }
   }
 

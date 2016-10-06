@@ -29,7 +29,6 @@ class HintListActions {
     }
 
     getHints(value) {
-        console.log(AuthStore.getState().jwtkey);
         let params = {
             value: value
         };

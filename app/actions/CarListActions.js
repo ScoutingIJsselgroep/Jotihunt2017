@@ -11,7 +11,6 @@ class CarListActions {
     }
 
     updateCars(data) {
-        console.log(data);
         this.actions.getCarsSuccess(data);
     }
 

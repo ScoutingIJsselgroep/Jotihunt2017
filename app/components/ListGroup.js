@@ -47,10 +47,7 @@ class AddHint extends React.Component {
               <td>
                 {this.state.mapConstructor.filtered[i].properties.name}
               </td>
-              <td>
-                {this.state.mapConstructor.filtered[i].properties.subarea}
-              </td>
-              <td dangerouslySetInnerHTML={{__html: this.state.mapConstructor.filtered[i].properties.extended}}/>
+              <td dangerouslySetInnerHTML={{__html: this.state.mapConstructor.filtered[i].properties.description}}/>
             </tr>
         );
       }
@@ -61,7 +58,7 @@ class AddHint extends React.Component {
           <div className='col-sm-12'>
             <div className='panel panel-default'>
               <div className='panel-heading'>Lijst van scoutinggroepen
-                <input type="textbox" className="form-control" placeholder="Zoeken. Tip: vul 'Alpha' in." value={this.state.mapConstructor.filter} onChange={this.filter}/>
+                <input type="textbox" className="form-control" placeholder="Zoeken." value={this.state.mapConstructor.filter} onChange={this.filter}/>
               </div>
               <div className='panel-body'>
                 <table className="table">
@@ -69,9 +66,6 @@ class AddHint extends React.Component {
                   <tr>
                     <th>
                       Groepnaam
-                    </th>
-                    <th>
-                      Deelgebied
                     </th>
                     <th>
                       Locatie

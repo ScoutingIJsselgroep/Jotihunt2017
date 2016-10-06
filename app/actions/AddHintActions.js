@@ -3,7 +3,7 @@ import alt from '../alt';
 var SendMessages = require('./../helpers/sendMessages');
 
 import AuthStore from './../stores/AuthStore';
-
+var moment = require('moment');
 
 var config = require('./../../config');
 var rdToWgs = require('rdtowgs');
@@ -57,11 +57,23 @@ class AddCharacterActions {
     }
   }
 
-  addHint(rdx, rdy, wsgx, wsgy, location, subarea) {
-      SendMessages.sendMessage({
-        chat_id: config.telegramchats[subarea],
-        text: 'Nieuwe locatie voor ' + subarea + ': ' + location
-      });
+  addHint(rdx, rdy, wsgx, wsgy, location, subarea, type) {
+      if (type == "hint") {
+        SendMessages.sendMessage({
+          chat_id: config.telegramchats[subarea],
+          text: '[HINT] Nieuwe locatie voor ' + subarea + ': ' + location
+        });
+      } else if (type == "hunt") {
+        SendMessages.sendMessage({
+          chat_id: config.telegramchats[subarea],
+          text: '[HUNT] Vossen in dit deelgebied mogen pas rond ' + moment().add(1, 'hours').format("ddd HH:mm") + ' weer gehunt worden!'
+        });
+      } else {
+        SendMessages.sendMessage({
+          chat_id: config.telegramchats[subarea],
+          text: '[LOCATIE] Gewoon een locatie doorgestuurd vanaf Jotihunt.JS'
+        });
+      }
       SendMessages.sendLocation({
         chat_id: config.telegramchats[subarea],
         latitude: wsgx,
@@ -73,7 +85,7 @@ class AddCharacterActions {
         beforeSend: function (xhr) {
           xhr.setRequestHeader ("Authorization", "Bearer " + AuthStore.getState().jwtkey);
         },
-        data: {rdx: rdx, rdy: rdy, wsgx: wsgx, wsgy: wsgy, location: location, subarea: subarea}
+        data: {rdx: rdx, rdy: rdy, wsgx: wsgx, wsgy: wsgy, location: location, subarea: subarea, type: type}
       })
           .done((data) => {
             this.actions.addHintSuccess(data.message);

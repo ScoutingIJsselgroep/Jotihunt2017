@@ -124,6 +124,7 @@ apiRoutes.get('/cars', function (req, res, next) {
  * @apiHeader {String} Authorization Bearer eyJ0eXAiOiJKV1QiLCJhbGciOi...
  *
  * @apiParam {String} value Applies a filter to certain fields in the database.
+ * @apiParam {Number} age Applies some age to the hints (default 6 hours).
  *
  * @apiSuccess {String} message The success message.
  *
@@ -172,21 +173,21 @@ apiRoutes.get('/hints', function (req, res, next) {
     }
 });
 
-apiRoutes.get("/foxstatus", function (req, res, next){
-   Poll.findOne({pollhook: "vossen"}).sort({created_at: -1}).exec(function(err, foxstatus){
-       res.send(JSON.parse(foxstatus.polldata));
-   })
+apiRoutes.get("/foxstatus", function (req, res, next) {
+    Poll.findOne({pollhook: "vossen"}).sort({created_at: -1}).exec(function (err, foxstatus) {
+        res.send(JSON.parse(foxstatus.polldata));
+    })
 });
 
 /**
- * @api {post} /api/car Post a new car location.
+ * @api {post} /api/cars Post a new car location.
  * @apiName PostCar
  * @apiGroup Car
  *
  * @apiHeader {String} Authorization Bearer eyJ0eXAiOiJKV1QiLCJhbGciOi...
  *
- * @apiParam {Number} wsgx WSG84 Lat (52.199735).
- * @apiParam {Number} wsgy WSG84 Lng (6.2130697).
+ * @apiParam {Number} latitude WSG84 Lat (52.199735).
+ * @apiParam {Number} longitude WSG84 Lng (6.2130697).
  *
  * @apiSuccess {String} message The succcess message.
  *
@@ -215,9 +216,9 @@ apiRoutes.get("/foxstatus", function (req, res, next){
  *        "error": "Locatie opslaan niet gelukt"
  *     }
  */
-apiRoutes.post('/car', function (req, res, next) {
-    var wsgx = req.body.wsgx;
-    var wsgy = req.body.wsgy;
+apiRoutes.post('/cars', function (req, res, next) {
+    var wsgx = req.body[0].latitude;
+    var wsgy = req.body[0].longitude;
 
     var userId = req.user.sub;
 
@@ -330,6 +331,7 @@ apiRoutes.delete('/hints', function (req, res, next) {
  * @apiParam {Number} rdy Rijksdriehoek Y (21148).
  * @apiParam {Number} wsgx WSG84 Lat (52.199735).
  * @apiParam {Number} wsgy WSG84 Lng (6.2130697).
+ * @apiParam {String} type Type of the hint (hint, hunt or other).
  * @apiParam {String} location The location as string.
  * @apiParam {String} subarea The subarea as string, with uppercase first char (Alpha).
  *
@@ -362,6 +364,7 @@ apiRoutes.post('/hints', function (req, res, next) {
     var wsgy = req.body.wsgy;
     var location = req.body.location;
     var subarea = req.body.subarea;
+    var type = req.body.type;
 
     async.waterfall([
         function () {
@@ -372,6 +375,7 @@ apiRoutes.post('/hints', function (req, res, next) {
                     wsgy: wsgy,
                     rdx: rdx,
                     rdy: rdy,
+                    type: type,
                     location: location
                 });
 
@@ -387,6 +391,66 @@ apiRoutes.post('/hints', function (req, res, next) {
     ]);
 });
 
+apiRoutes.get("/groups", function (req, res, next) {
+    var kml = require('gtran-kml-data');
+    kml.setPromiseLib(require('bluebird'));
+    kml.toGeoJson(path.join(__dirname, './public/' + config.kml))
+        .then(function (fc) {
+            mapComponents = fc.features;
+            const result = [];
+
+            for (var count in mapComponents) {
+                var it = mapComponents[count];
+                switch (it.geometry.type) {
+                    case "Point":
+                        const desc =it.properties.description.replace(/\t/g, '').replace(/(\r\n|\n|\r)/gm,"").replace(/<\/?[brp]*\s*[\/]?>/gi, " ");
+                        result.push({
+                            coordinate: {latitude: it.geometry.coordinates[1], longitude: it.geometry.coordinates[0]},
+                            title: it.properties.name,
+                            description: desc.substring(desc.indexOf("</a>") + 4)
+                        });
+                        break;
+                }
+            }
+            res.send(result);
+        });
+
+});
+
+apiRoutes.get("/polygon", function (req, res, next) {
+    var kml = require('gtran-kml-data');
+    kml.setPromiseLib(require('bluebird'));
+    kml.toGeoJson(path.join(__dirname, './public/' + config.kml))
+        .then(function (fc) {
+            mapComponents = fc.features;
+            const result = [];
+
+            for (var count in mapComponents) {
+                var it = mapComponents[count];
+                switch (it.geometry.type) {
+                    case "Polygon":
+                        const refactor = [];
+                        let i;
+                        for (i in it.geometry.coordinates[0]) {
+                            refactor.push({
+                                latitude: it.geometry.coordinates[0][i][1],
+                                longitude: it.geometry.coordinates[0][i][0]
+                            });
+                        }
+                        result.push({
+                            coordinates: refactor,
+                            fillColor: '#' + it.properties.style,
+                            strokeColor: '#' + it.properties.style,
+                            fillOpacity: config.map.fillOpacity
+                        });
+
+                        break;
+                }
+            }
+            res.send(result);
+        });
+
+});
 /**
  * GET /api/stats
  * Returns characters statistics.

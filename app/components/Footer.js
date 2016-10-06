@@ -19,6 +19,9 @@ class Footer extends React.Component {
               <p>Powered by <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>React</strong> with Flux architecture and server-side rendering.</p>
               <p>© 2016 Tristan de Boer.</p>
             </div>
+            <div className='col-sm-2 footerimage text-center'>
+              <img src="/img/logo_256.png" />
+            </div>
           </div>
         </div>
       </footer>

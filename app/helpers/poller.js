@@ -10,12 +10,11 @@ var async = require('async');
 var request = require('request');
 
 function sendMessage(previousdata, data, hook) {
-    console.log(previousdata);
     switch(hook){
         case "vossen":
             var messageList = [];
             for (var i in data){
-                if (!previousdata || (data[i].status != previousdata.polldata[i].status && data[i].team == previousdata.polldata[i].team)){
+                if (!previousdata || (data[i].status != JSON.parse(previousdata.polldata)[i].status && data[i].team == JSON.parse(previousdata.polldata)[i].team)){
                     messageList.push({
                         chat_id: config.telegramchats[data[i].team],
                         text: data[i].team + ' is net op ' + data[i].status + ' gesprongen.' + config.emoticons.status[data[i].status]
@@ -26,10 +25,13 @@ function sendMessage(previousdata, data, hook) {
             break;
         case "opdracht":
             request(config.polling.url + hook + '/' + data[0].ID, function (error, response, body) {
-                SendMessages.sendMessage({
-                    chat_id: config.telegramchats[hook],
-                    text: JSON.parse(body).data[0].titel + JSON.parse(body).data[0].inhoud.replace(/<\/?[^>]+(>|$)/g, "")
-                });
+                try {
+                    SendMessages.sendMessage({
+                        chat_id: config.telegramchats[hook],
+                        text: JSON.parse(body).data[0].titel + JSON.parse(body).data[0].inhoud.replace(/<\/?[^>]+(>|$)/g, "")
+                    });
+                } catch (exception){
+                }
             });
             break;
         case "nieuws":
@@ -76,8 +78,11 @@ function callPoll(io){
             function (callback) {
                 // Poll Jotihunt.net
                 request(config.polling.url + this.hook, function (error, response, body) {
-                    if (!error && response.statusCode == 200) {
-                        callback(null, JSON.parse(body));
+                    try {
+                        if (!error && response.statusCode == 200) {
+                            callback(null, JSON.parse(body));
+                        }
+                    } catch (exception){
                     }
                 });
             }.bind({hook: hooks[i]}),

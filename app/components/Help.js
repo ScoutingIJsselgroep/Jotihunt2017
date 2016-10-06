@@ -16,24 +16,11 @@ class Help extends React.Component {
                 <div className='col-sm-12 col-md-8 col-md-offset-2'>
                     <div className='panel panel-default'>
                         <div className='panel-body videocontainer'>
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/xfl00rFqq2A?autoplay=1&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/xfl00rFqq2A?autoplay=1&controls=0&showinfo=0&rel=0" frameBorder="0" allowFullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-            {/*<div className='row fadeInUp animated'>
-                <div className='col-sm-12'>
-                    <div className='panel panel-default'>
-                        <div className='panel-heading'>
-                            Hoe verloopt de communicatie?
-                        </div>
-                        <div className='panel-body'>
-                            <img src="/img/diagram.png" /><br/>
-                            De mensen die de hints oplossen hebben tijdens het oplossen van de hints geen communicatie met de mensen die op de weg zitten. Dit doen de coördinatoren. Zij overleggen met de personen in de auto. Ook kunnen de personen in de auto op deze website kijken.
-                        </div>
-                    </div>
-                </div>
-            </div>*/}
             <div className='row fadeInUp animated'>
                 <div className='col-sm-12'>
                     <div className='panel panel-default'>

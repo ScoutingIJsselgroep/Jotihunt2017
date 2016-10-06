@@ -15,6 +15,10 @@ import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
 
 var config = require('./../../config');
 
+var lat = config.map.center.lat;
+var lng = config.map.center.lng;
+var zoom = config.map.center.zoom;
+
 class MapHint extends React.Component {
 
   constructor (props) {
@@ -28,6 +32,13 @@ class MapHint extends React.Component {
     this.onHintListChange = this.onHintListChange.bind(this);
     this.onMapChange = this.onMapChange.bind(this);
     this.onMapComponentsChange = this.onMapComponentsChange.bind(this);
+    this.boundsChanged = this.boundsChanged.bind(this);
+  }
+
+  boundsChanged(){
+    lat = this.refs.Gmaps.map.center.lat();
+    lng = this.refs.Gmaps.map.center.lng();
+    zoom = this.refs.Gmaps.map.zoom;
   }
 
   componentDidMount() {
@@ -100,14 +111,16 @@ class MapHint extends React.Component {
                 <Gmaps
                     width={'100%'}
                     height={'50em'}
-                    lat={this.state.mapOptions.wsgx}
-                    lng={this.state.mapOptions.wsgy}
-                    zoom={this.state.mapOptions.zoomLevel}
+                    lat={lat}
+                    lng={lng}
+                    zoom={zoom}
+                    fullscreenControl={false}
+                    onBoundsChanged={this.boundsChanged}
                     loadingMessage={'Map laden'}
                     ref="Gmaps"
                     params={{v: '3.exp', key: config.apiKey, libraries: 'places'}}>
                   {PointLayer.render(this.state.hintlist.hintlist, {showLines: true}, infoWindow)}
-                  {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, true, false, true, infoWindow)}
+                  {JHKmlLayer.render(this.state.mapConstructor.mapConstructor, false, false, true, infoWindow)}
                   {PointLayer.render(this.state.mapOptions.infoWindow, {}, infoWindow)}
                 </Gmaps>
               </div>

@@ -12,7 +12,7 @@ module.exports = {
         apitoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpbVBnM044VDRHNHNuZ0Q3Um9DY0I0MXAwQ2ZJNm1xSCIsInNjb3BlcyI6eyJ1c2VycyI6eyJhY3Rpb25zIjpbInJlYWQiXX19LCJpYXQiOjE0NzQ5MjI4MTYsImp0aSI6ImVmMjgyYWIzNzMyZThiNzNhMDJhMWYxOWQ3Y2I1N2JlIn0.zA6BHsdZFqABnayFu2SvOq1foTa1HCFLTa2XzETrsP4'
     },
     circle: {
-        forGroup: 'Karel',
+        forGroup: 'Scouting IJsselgroep & Scoutinggroep de Witte Wieven',
         radius: 500
     },
     passwords: [{
@@ -46,13 +46,19 @@ module.exports = {
             lng: 5.8736160278,
             zoom: 9
         },
+        icon : {
+            green: "https://mt.google.com/vt/icon?psize=20&font=fonts/Roboto-Regular.ttf&color=ff330000&name=icons/spotlight/spotlight-waypoint-a.png&ax=44&ay=48&scale=1",
+            yellow: "http://mt.google.com/vt/icon/name=icons/spotlight/star_L_8x.png&scale=1",
+            blue: "http://mt.google.com/vt/icon?color=ff004C13&name=icons/spotlight/spotlight-waypoint-blue.png",
+            hint: "http://mt.google.com/vt/icon/name=icons/spotlight/jp/police_japan_L_8x.png&scale=1"
+        },
         fillOpacity: 0.05
     },
     kml: '2015.kml',
     subareas: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
     polling: {
         pollTime: 15 * 1000,
-        hooks: ["vossen","opdracht","hint","nieuws"],
+        hooks: ["hint","opdracht","vossen","nieuws"],
         url: "http://jotihunt.net/api/1.0/"
     },
     form: "https://docs.google.com/forms/d/e/1FAIpQLScwDHxjAMMpU_FxLkU5zEyD-Nw49L9ALLpLpdwmAyl6QG5soQ/viewform",

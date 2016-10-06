@@ -14,6 +14,8 @@ class Login extends React.Component {
             authenticated: AuthStore.getState(),
         };
         this.onAuthChange = this.onAuthChange.bind(this);
+        this.logout = this.logout.bind(this);
+        this._doAuthentication = this._doAuthentication.bind(this);
 
     }
     componentDidMount() {
@@ -54,17 +56,19 @@ class Login extends React.Component {
                 toastr.error('Error loading the Profile');
             } else {
                 AuthActions.login({profile: profile, token: authResult.idToken});
+                this.props.update();
             }
         });
     }
 
     login() {
         // Call the show method to display the widget.
-        this.lock.show()
+        this.lock.show();
     }
 
     logout(){
         AuthActions.logout();
+        this.props.update();
     }
 
     render() {

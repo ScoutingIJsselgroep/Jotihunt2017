@@ -4,1266 +4,1142 @@
 		<description><![CDATA[]]></description>
 		<Folder>
 			<name>Groepen</name>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[De Rietkampers - Don Bosco]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Afferden (Gld.)<br/>
-							<a href="http://www.derietkampers.nl" target="_blank">
-									http://www.derietkampers.nl
-							</a><br>
-							Koningstraat 114<br />
-							6654 AH Afferden (Gld.)<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.616438,51.88199,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Jagermeester Johan Bentinck]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Apeldoorn<br/>
-							<a href="http://scoutinggroep-jjb.net/" target="_blank">
-									http://scoutinggroep-jjb.net/
-							</a><br>
-							Berghuizerweg 155<br />
-							7312SN Apeldoorn<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.923047,52.19646,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Olivier van Noort]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Apeldoorn<br/>
-							<a href="http://www.oliviervannoort.nl/" target="_blank">
-									http://www.oliviervannoort.nl/
-							</a><br>
-							Sutton  15<br />
-							7327AB Apeldoorn<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.989448,52.19005,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[ScoutingHvG & PPD]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Apeldoorn<br/>
-							<a href="http://scoutinghvg.nl" target="_blank">
-									http://scoutinghvg.nl
-							</a><br>
-							Polderweg 4-6<br />
-							7326HW Apeldoorn<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.005221,52.18421,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Stadhouder Willem III / Lady Baden Powell]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Apeldoorn<br/>
-							<a href="http://www.sw3lbp.nl" target="_blank">
-									http://www.sw3lbp.nl
-							</a><br>
-							Jachtlaan 6<br />
-							7313 CP Apeldoorn<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.942608,52.22592,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Aerendheem]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://www.aerendheem.nl" target="_blank">
-									http://www.aerendheem.nl
-							</a><br>
-							Lindestraat 26<br />
-							6823JT Arnhem<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.947809,52.00422,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Andre De Thaye]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://www.andredethaye.com/" target="_blank">
-									http://www.andredethaye.com/
-							</a><br>
-							Voetiuslaan 41<br />
-							6828 TD  Arnhem<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.934190,51.98133,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[De Geuzen Arnhem]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://www.degeuzenarnhem.nl" target="_blank">
-									http://www.degeuzenarnhem.nl
-							</a><br>
-							Diependalseweg 3<br />
-							6813 GE Arnhem<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.876333,51.98773,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Lido '76 & Voermangroep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://lido76.nl" target="_blank">
-									http://lido76.nl
-							</a><br>
-							Veerpolderstraat 128a<br />
-							6833BS Arnhem<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.917350,51.96803,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Schutgraaf Arnhem]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://schutgraaf.nl" target="_blank">
-									http://schutgraaf.nl
-							</a><br>
-							Hannesstraatje 4<br />
-							6842NV Arnhem<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.869633,51.96612,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[St. Christoforus - Lichtdraagsters]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Arnhem<br/>
-							<a href="http://christoforus.nl/" target="_blank">
-									http://christoforus.nl/
-							</a><br>
-							Monnikensteeg 4<br />
-							6823 AB Arnhem<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.931556,51.99619,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Bemmel]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Bemmel<br/>
-							<a href="http://www.scouting-bemmel.nl" target="_blank">
-									http://www.scouting-bemmel.nl
-							</a><br>
-							Sportlaan 1F<br />
-							6681 CD Bemmel<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.905510,51.88713,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Bennekom]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Bennekom<br/>
-							<a href="http://www.scoutingbennekom.nl" target="_blank">
-									http://www.scoutingbennekom.nl
-							</a><br>
-							Selterskampweg 68<br />
-							6721 AV Bennekom<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.685939,52.00992,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scoutinggroep St. Stanislaus]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Culemborg<br/>
-							<a href="http://www.scoutnet.nl/~sint.stanislaus/" target="_blank">
-									http://www.scoutnet.nl/~sint.stanislaus/
-							</a><br>
-							Steenovenslaan 20<br />
-							4101 AM Culemborg<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.216848,51.95993,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Triton]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Culemborg<br/>
-							<a href="http://www.tritonscouting.nl/" target="_blank">
-									http://www.tritonscouting.nl/
-							</a><br>
-							Steenovenslaan 4<br />
-							4101 AM Culemborg<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.217411,51.96068,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting  Deest]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Deest<br/>
-							<a href="http://www.dewoutergroep.nl" target="_blank">
-									http://www.dewoutergroep.nl
-							</a><br>
-							Kweldam 1<br />
-							6653CB Deest<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.660155,51.88904,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Titus Brandsma Deventer]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Deventer - Colmschate<br/>
-							<a href="http://www.connectitus.nl" target="_blank">
-									http://www.connectitus.nl
-							</a><br>
-							Doornenburg 530<br />
-							7423 BT Deventer - Colmschate<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.212296,52.25057,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[St. Willibrordgroep Didam]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Didam<br/>
-							<a href="" target="_blank">
-									
-							</a><br>
-							Julianastraat 41<br />
-							6942BB Didam<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.132141,51.93849,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Dieren]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Dieren<br/>
-							<a href="http://scoutingdieren.nl/" target="_blank">
-									http://scoutingdieren.nl/
-							</a><br>
-							Kolonieweg 9<br />
-							6952GZ Dieren<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.076759,52.05380,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Isala groep Scouting Doesburg]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Doesburg<br/>
-							<a href="http://www.scoutingdoesburg.nl" target="_blank">
-									http://www.scoutingdoesburg.nl
-							</a><br>
-							Zanderskamp 93<br />
-							6983 CG  Doesburg<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.129577,52.00146,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Graaf Ottogroep Doetinchem]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Doetinchem<br/>
-							<a href="http://www.graaf-ottogroep.nl" target="_blank">
-									http://www.graaf-ottogroep.nl
-							</a><br>
-							Auroraweg 6<br />
-							7007 GZ Doetinchem<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.271238,51.95454,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Hamaland]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Doetinchem<br/>
-							<a href="http://scoutinghamaland.nl/" target="_blank">
-									http://scoutinghamaland.nl/
-							</a><br>
-							Keppelseweg 249<br />
-							7008BB Doetinchem<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.267499,51.97640,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Roothaangroep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Doetinchem<br/>
-							<a href="http://roothaangroep.nl" target="_blank">
-									http://roothaangroep.nl
-							</a><br>
-							Koekendaalseweg 11<br />
-							7004 GH Doetinchem<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.321237,51.94940,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Duiven-Wehl]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Duiven<br/>
-							<a href="http://www.scoutingduiven.nl" target="_blank">
-									http://www.scoutingduiven.nl
-							</a><br>
-							Nieuweling 3<br />
-							6921 JL Duiven<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.032317,51.94400,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Langenberggroep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Ede<br/>
-							<a href="http://langenberggroep.nl/blog/" target="_blank">
-									http://langenberggroep.nl/blog/
-							</a><br>
-							Buurtmeesterweg 25<br />
-							6711 HL Ede<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.690837,52.04041,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Jan Hilgers]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Ede<br/>
-							<a href="http://www.scoutingjanhilgers.nl" target="_blank">
-									http://www.scoutingjanhilgers.nl
-							</a><br>
-							Dwarsweg 1-3<br />
-							6715AT Ede<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.620708,52.04164,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[St. Werenfridusgroep Scouting Elst]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Elst<br/>
-							<a href="http://www.scoutingelst.nl" target="_blank">
-									http://www.scoutingelst.nl
-							</a><br>
-							De Pas 4<br />
-							6662 BG Elst<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.843455,51.90664,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Alexandergroep Ermelo]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Ermelo<br/>
-							<a href="http://www.alexandergroep.nl/" target="_blank">
-									http://www.alexandergroep.nl/
-							</a><br>
-							Watervalweg 175<br />
-							3853 PS Ermelo<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.594555,52.28666,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Irmin-Taweb Ermelo]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Ermelo<br/>
-							<a href="http://www.irmin-taweb.nl" target="_blank">
-									http://www.irmin-taweb.nl
-							</a><br>
-							Kalkoenweg 23<br />
-							3851 SB Ermelo<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.620204,52.31538,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Gaanderen (Scoga)]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Gaanderen<br/>
-							<a href="http://scoga.nl" target="_blank">
-									http://scoga.nl
-							</a><br>
-							Hamminkstraat 21<br />
-							7011 HC Gaanderen<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.347372,51.93788,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Graaf van Gelre]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Geldermalsen<br/>
-							<a href="http://www.scoutinggeldermalsen.nl" target="_blank">
-									http://www.scoutinggeldermalsen.nl
-							</a><br>
-							Frederik Hendrikstraat  3<br />
-							4191 ZH Geldermalsen<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.305001,51.88657,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Isselhunters]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Gendringen<br/>
-							<a href="http://www.scoutinggendringen.nl" target="_blank">
-									http://www.scoutinggendringen.nl
-							</a><br>
-							Tulpstraat 6<br />
-							7081 EB Gendringen<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.371122,51.87026,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Groessen Zeddam]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Groessen<br/>
-							<a href="http://www.scoutsgroessen.nl/" target="_blank">
-									http://www.scoutsgroessen.nl/
-							</a><br>
-							Sint Isidorusplein  8<br />
-							6923 BD Groessen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.032352,51.93189,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Ragay Redoz]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Harderwijk<br/>
-							<a href="http://ragayredoz.nl/" target="_blank">
-									http://ragayredoz.nl/
-							</a><br>
-							Strokelweg 4<br />
-							3847 LR Harderwijk<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.635374,52.32642,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Verbraak Margriet Gorep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Harderwijk<br/>
-							<a href="http://www.verbraakmargrietgroep.nl" target="_blank">
-									http://www.verbraakmargrietgroep.nl
-							</a><br>
-							Strokel  6<br />
-							3847 LR Harderwijk<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.635492,52.32476,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Mgr. de la Geneste te Grave]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Heumen<br/>
-							<a href="http://www.scoutinggrave.nl" target="_blank">
-									http://www.scoutinggrave.nl
-							</a><br>
-							Overasseltseweg 4a<br />
-							6582BL Heumen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.829094,51.76507,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Dannenburcht Huissen]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Huissen<br/>
-							<a href="http://www.scoutingdannenburcht.nl" target="_blank">
-									http://www.scoutingdannenburcht.nl
-							</a><br>
-							Kloosterlaan 1a<br />
-							6851CA Huissen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.942122,51.93557,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Sweder van Voorst]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Hummelo<br/>
-							<a href="http://scoutingsweder.nl" target="_blank">
-									http://scoutingsweder.nl
-							</a><br>
-							Torenallee 2b<br />
-							6999DD Hummelo<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.224870,52.02149,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting de Witte Wieven & IJsselgroep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Lochem<br/>
-							<a href="http://www.scoutingdewittewieven.nl" target="_blank">
-									http://www.scoutingdewittewieven.nl
-							</a><br>
-							Vordenseweg  9<br />
-							7241RL Lochem<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.391382,52.14490,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Valeouwe]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Loenen<br/>
-							<a href="http://www.scoutingloenen.nl" target="_blank">
-									http://www.scoutingloenen.nl
-							</a><br>
-							Lonapark 10<br />
-							7371 EH Loenen<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.028007,52.12213,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Kiliaen van Rensselaer 1]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijkerk<br/>
-							<a href="http://www.kvr1.nl" target="_blank">
-									http://www.kvr1.nl
-							</a><br>
-							Nautenaseweg 2<br />
-							3861PH Nijkerk<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.467970,52.22016,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Karel de Stoute]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijmegen<br/>
-							<a href="http://www.kareldestoute.nl" target="_blank">
-									http://www.kareldestoute.nl
-							</a><br>
-							Weezenhof 93-11<br />
-							6536AE Nijmegen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.817855,51.80160,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Paul Kruger]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijmegen<br/>
-							<a href="http://scoutingpaulkruger.nl/" target="_blank">
-									http://scoutingpaulkruger.nl/
-							</a><br>
-							Wilhelminasingel  13-15<br />
-							6524 AJ Nijmegen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.864188,51.84089,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting amalgama]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijmegen<br/>
-							<a href="http://scoutingamalgama.nl" target="_blank">
-									http://scoutingamalgama.nl
-							</a><br>
-							Weteringweg 50<br />
-							6546JZ Nijmegen<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.785552,51.83918,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scoutinggroep de Bevers en Scouting MAlden]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijmegen<br/>
-							<a href="http://www.scoutinggroepdebevers.nl" target="_blank">
-									http://www.scoutinggroepdebevers.nl
-							</a><br>
-							Staddijk  105<br />
-							6537 TW Nijmegen<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.789773,51.80898,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Z.V. de Batavieren]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nijmegen<br/>
-							<a href="http://www.batavieren.com" target="_blank">
-									http://www.batavieren.com
-							</a><br>
-							Grootstalselaan 13<br />
-							6533KH Nijmegen<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.849093,51.80807,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Nunspeet]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Nunspeet<br/>
-							<a href="http://www.scoutingnunspeet.nl/" target="_blank">
-									http://www.scoutingnunspeet.nl/
-							</a><br>
-							Zandenboslaan 80<br />
-							8072 PP Nunspeet<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.806708,52.37615,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[OPV-Schoonoord]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Oosterbeek<br/>
-							<a href="http://www.opv-schoonoord.nl" target="_blank">
-									http://www.opv-schoonoord.nl
-							</a><br>
-							Sportlaan 2<br />
-							6861 AG Oosterbeek<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.820522,51.99272,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Kon-Tiki]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Putten<br/>
-							<a href="http://www.scoutingkontiki.nl" target="_blank">
-									http://www.scoutingkontiki.nl
-							</a><br>
-							Garderenseweg 144b<br />
-							3881NC Putten<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.639762,52.24496,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Rhedense Pioniers]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Rheden<br/>
-							<a href="http://www.rhedensepioniers.nl" target="_blank">
-									http://www.rhedensepioniers.nl
-							</a><br>
-							Arnhemseweg 30<br />
-							6991 DP Rheden<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.027932,52.00621,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Jonko]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Silvolde<br/>
-							<a href="http://www.scoutingsilvolde.nl/" target="_blank">
-									http://www.scoutingsilvolde.nl/
-							</a><br>
-							Kerkenstraat 5<br />
-							7064AV Silvolde<br>
-							C
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.381213,51.91026,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Phoenix Tiel]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Tiel<br/>
-							<a href="http://www.scoutingphoenix.nl" target="_blank">
-									http://www.scoutingphoenix.nl
-							</a><br>
-							De Hennepe 199<br />
-							4003 AD Tiel<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.426473,51.89977,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Valburg (Christophorus)]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Valburg<br/>
-							<a href="http://www.scoutingvalburg.nl" target="_blank">
-									http://www.scoutingvalburg.nl
-							</a><br>
-							Burgemeester van Lyndenpark 71<br />
-							6675AZ Valburg<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.789454,51.91262,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[De Zwervers]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Veenendaal<br/>
-							<a href="http://zwervers.com" target="_blank">
-									http://zwervers.com
-							</a><br>
-							zandheuvelweg 2a<br />
-							3905 md Veenendaal<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.536159,52.01527,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Velpsche Woudloopers en de Olmen]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Velp<br/>
-							<a href="http://scoutingvelp.nl" target="_blank">
-									http://scoutingvelp.nl
-							</a><br>
-							Beekhuizenseweg  73a<br />
-							6881 EC Velp<br>
-							B
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.978826,52.00825,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[WELIKA]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Westervoort<br/>
-							<a href="http://www.sint-jorisgroep.nl" target="_blank">
-									http://www.sint-jorisgroep.nl
-							</a><br>
-							Paepestraat 27<br />
-							6931 CP Westervoort<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.963430,51.95865,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Beuningen `76]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Weurt<br/>
-							<a href="http://www.scoutingbeuningen.nl" target="_blank">
-									http://www.scoutingbeuningen.nl
-							</a><br>
-							Reekstraat  13a<br />
-							6551DR Weurt<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.782016,51.85362,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting st. Andries Weurt]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Weurt<br/>
-							<a href="http://www.scoutingweurt.nl" target="_blank">
-									http://www.scoutingweurt.nl
-							</a><br>
-							Kerkstraat 50<br />
-							6551 ZZ Weurt<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.817182,51.85914,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Woezik]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Wijchen<br/>
-							<a href="http://scoutingwoezik.nl/" target="_blank">
-									http://scoutingwoezik.nl/
-							</a><br>
-							Oud Woezikse straat 3<br />
-							6604 KD Wijchen<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.717293,51.82510,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Karmijngroep Winssen]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Winssen<br/>
-							<a href="http://www.scoutingwinssen.nl" target="_blank">
-									http://www.scoutingwinssen.nl
-							</a><br>
-							Kennedysingel 8a<br />
-							6645 AW Winssen<br>
-							F
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.700343,51.88143,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Jan Wandelaar]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Zeewolde<br/>
-							<a href="http://www.janwandelaar.nl/" target="_blank">
-									http://www.janwandelaar.nl/
-							</a><br>
-							Dasselaarweg 49<br />
-							3896 LT Zeewolde<br>
-							A
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.528762,52.30678,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Zetten]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Zetten<br/>
-							<a href="http://www.scoutingzetten.nl" target="_blank">
-									http://www.scoutingzetten.nl
-							</a><br>
-							Piersonstraat 21<br />
-							6671 CK Zetten<br>
-							E
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>5.709350,51.93255,0.0</coordinates>
-					</Point>
-				</Placemark>
-							<Placemark>
-					<styleUrl>#icon-1197</styleUrl>
-					<name><![CDATA[Scouting Subanhara Liemersgroep]]></name>
-					<ExtendedData>
-						<![CDATA[
-						<p>
-							Zevenaar<br/>
-							<a href="http://www.subanharaliemersgroep.nl/algemeen/home.php" target="_blank">
-									http://www.subanharaliemersgroep.nl/algemeen/home.php
-							</a><br>
-							slenterweg  29<br />
-							6905DP Zevenaar<br>
-							D
-						</p>
-						]]>
-					</ExtendedData>
-					<Point>
-						<coordinates>6.066020,51.91578,0.0</coordinates>
-					</Point>
-				</Placemark>
+                                                    <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[SBV/Kastanjegroep]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="https://www.sbv-kastanjegroep.nl" target="_blank">
+                                            			https://www.sbv-kastanjegroep.nl                	</a><br>
+                                            	Frans Halslaan 101<br />
+                                            	6814 JP Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.890477001667023,51.99231881081593,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Rhedense Pioniers]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Rheden<br/>
+                                            	<a href="http://www.rhedensepioniers.nl/" target="_blank">
+                                            			http://www.rhedensepioniers.nl/                	</a><br>
+                                            	Arnhemseweg 30<br />
+                                            	6991DP Rheden<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.027968376874924,52.00604576498145,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Groessen + Zeddam]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Groessen<br/>
+                                            	<a href="http://www.scoutsgroessen.nl" target="_blank">
+                                            			http://www.scoutsgroessen.nl                	</a><br>
+                                            	St. Isidorusplein 8<br />
+                                            	6923BD Groessen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.032347083091736,51.93188921625557,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Jan Wandelaar Zeewolde]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Zeewolde<br/>
+                                            	<a href="http://janwandelaar.nl/ en https://www.facebook.com/scoutingjanwandelaar/?fref=ts" target="_blank">
+                                            			http://janwandelaar.nl/ en https://www.facebook.com/scoutingjanwandelaar/?fref=ts                	</a><br>
+                                            	Dasselaarweg 49<br />
+                                            	3896 LT Zeewolde<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.528676509857178,52.306812424165024,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Nunspeet]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nunspeet<br/>
+                                            	<a href="http://www.scoutingnunspeet.nl" target="_blank">
+                                            			http://www.scoutingnunspeet.nl                	</a><br>
+                                            	Zandenboslaan 80<br />
+                                            	8072PP Nunspeet<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.806744350456938,52.376206483221,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Dieren]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Dieren<br/>
+                                            	<a href="http://www.scoutingdieren.nl/" target="_blank">
+                                            			http://www.scoutingdieren.nl/                	</a><br>
+                                            	Kolonieweg 9<br />
+                                            	6952GZ Dieren<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.076759770512581,52.05416870462895,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Beuningen `76]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Weurt<br/>
+                                            	<a href="http://www.scoutingbeuningen.nl" target="_blank">
+                                            			http://www.scoutingbeuningen.nl                	</a><br>
+                                            	Reekstraat 13a<br />
+                                            	6551 DR Weurt<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.782083570957184,51.853670296145225,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Lido '76/Voermangroep]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="https://scoutinglido76.nl/" target="_blank">
+                                            			https://scoutinglido76.nl/                	</a><br>
+                                            	Veerpolderstraat 128A<br />
+                                            	6833 BS Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.9174660593271255,51.968301177605376,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Graaf van Gelre ]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Geldermalsen<br/>
+                                            	<a href="http://www.scoutinggeldermalsen.nl/" target="_blank">
+                                            			http://www.scoutinggeldermalsen.nl/                	</a><br>
+                                            	Burgemeester Roozeveld v/d Venlaan 13a<br />
+                                            	4191PL Geldermalsen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.271087884902954,51.87764786758819,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[St. Stanislaus]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Culemborg<br/>
+                                            	<a href="http://www.scoutnet.nl/~sint.stanislaus/" target="_blank">
+                                            			http://www.scoutnet.nl/~sint.stanislaus/                	</a><br>
+                                            	Steenovenlaan 18<br />
+                                            	4101 AM Culemborg<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.216681957244873,51.95989659144436,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[De Rietkampers - Don Bosco]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Afferden (Gld.)<br/>
+                                            	<a href="http://www.derietkampers.nl" target="_blank">
+                                            			http://www.derietkampers.nl                	</a><br>
+                                            	Koningstraat 114<br />
+                                            	6654 AH Afferden (Gld.)<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.6160494685173035,51.88204645307691,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting IJsselgroep & Scoutinggroep de Witte Wieven]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Gorssel<br/>
+                                            	<a href="http://scouting-ijsselgroep.nl" target="_blank">
+                                            			http://scouting-ijsselgroep.nl                	</a><br>
+                                            	Kwekerijweg 3<br />
+                                            	7213AX Gorssel<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.214176714420319,52.19920873157857,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Jan Hilgers Ede]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Ede<br/>
+                                            	<a href="http://www.scoutingjanhilgers.nl" target="_blank">
+                                            			http://www.scoutingjanhilgers.nl                	</a><br>
+                                            	Dwarsweg 1-3<br />
+                                            	6715 AT Ede<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.620375871658325,52.04209147545946,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Dannenburcht Huissen Stad]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Huissen<br/>
+                                            	<a href="http://www.scoutingdannenburcht.nl" target="_blank">
+                                            			http://www.scoutingdannenburcht.nl                	</a><br>
+                                            	 Kloosterlaan 1a<br />
+                                            	6851CA Huissen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.94172328710556,51.93535223229611,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting ]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Deest<br/>
+                                            	<a href="http://www.dewoutergroep.nl" target="_blank">
+                                            			http://www.dewoutergroep.nl                	</a><br>
+                                            	Kweldam 1A<br />
+                                            	6653CB Deest<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.660061836242676,51.88901930732916,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Karel de Stoute]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijmegen <br/>
+                                            	<a href="http://www.kareldestoute.nl" target="_blank">
+                                            			http://www.kareldestoute.nl                	</a><br>
+                                            	Weezenhof  9311<br />
+                                            	6536AE Nijmegen <br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.8178722858428955,51.801834769849584,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Karmijngroep Winssen]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Winssen<br/>
+                                            	<a href="http://www.scoutingwinssen.nl" target="_blank">
+                                            			http://www.scoutingwinssen.nl                	</a><br>
+                                            	Kennedysingel 8a<br />
+                                            	6645 AW Winssen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.700485855334136,51.881403437342044,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[St Willibrordgroep Didam]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Didam<br/>
+                                            	<a href="http://test.scouting-didam.nl" target="_blank">
+                                            			http://test.scouting-didam.nl                	</a><br>
+                                            	Julianastraat 41<br />
+                                            	6942BB Didam<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.13211452960968,51.93853717728195,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Nijkerk]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijkerkerveen<br/>
+                                            	<a href="http://www.scoutingnijkerk.nl" target="_blank">
+                                            			http://www.scoutingnijkerk.nl                	</a><br>
+                                            	Van Rootselaarstraat 7<br />
+                                            	3864EW Nijkerkerveen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.466324537992477,52.19526762213649,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Langenberggroep Ede ]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Ede<br/>
+                                            	<a href="http://www.joti.odiecustoms.nl" target="_blank">
+                                            			http://www.joti.odiecustoms.nl                	</a><br>
+                                            	Buurtmeesterweg 27-29<br />
+                                            	6711HL Ede<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.6908804178237915,52.04035587364239,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[HHW - Scouting Voorst]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Voorst<br/>
+                                            	<a href="http://www.scoutingvoorst.nl" target="_blank">
+                                            			http://www.scoutingvoorst.nl                	</a><br>
+                                            	De Halmen 1a<br />
+                                            	7383 BG Voorst<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.139010488986969,52.182250863853945,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Graaf Ottogroep Doetinchem]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Doetinchem<br/>
+                                            	<a href="https://www.graaf-ottogroep.nl/" target="_blank">
+                                            			https://www.graaf-ottogroep.nl/                	</a><br>
+                                            	Varsseveldseweg 182 <br />
+                                            	7003 AD Doetinchem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.309054493904114,51.96666269206156,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Gaanderen (Scoga)]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Gaanderen<br/>
+                                            	<a href="http://www.scoga.nl" target="_blank">
+                                            			http://www.scoga.nl                	</a><br>
+                                            	Hamminkstraat 21<br />
+                                            	7011 HC Gaanderen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.347317546606064,51.93797495005212,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[André de Thaye]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://www.andredethaye.com/" target="_blank">
+                                            			http://www.andredethaye.com/                	</a><br>
+                                            	Voetsiuslaan 41<br />
+                                            	6828TD Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.934945344924927,51.98116653620794,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Bennekom]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Bennekom<br/>
+                                            	<a href="https://www.scoutingbennekom.nl/" target="_blank">
+                                            			https://www.scoutingbennekom.nl/                	</a><br>
+                                            	Selterskampweg 68<br />
+                                            	6721 AV Bennekom<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.686953663825989,52.0099157988393,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Hamaland]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Doetinchem<br/>
+                                            	<a href="http://www.scoutinghamaland.nl/" target="_blank">
+                                            			http://www.scoutinghamaland.nl/                	</a><br>
+                                            	Keppelseweg 249<br />
+                                            	7008BB Doetinchem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.267319321632385,51.97644148858788,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scoutinggroep De Zwervers]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Veenendaal<br/>
+                                            	<a href="http://zwervers.com" target="_blank">
+                                            			http://zwervers.com                	</a><br>
+                                            	Zandheuvelweg 2a<br />
+                                            	3904MD Veenendaal<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.536184500415402,52.01525833255574,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Schutgraaf]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://schutgraaf.nl/" target="_blank">
+                                            			http://schutgraaf.nl/                	</a><br>
+                                            	Hannesstraatje 4<br />
+                                            	6843 NV Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.8696214854717255,51.966161962895235,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Velpsche Woudloopers & de Olmen]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Velp<br/>
+                                            	<a href="http://scoutingvelp.nl" target="_blank">
+                                            			http://scoutingvelp.nl                	</a><br>
+                                            	Beekhuizenseweg 73a<br />
+                                            	6881 AE Velp<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.97905158996582,52.00830706708547,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Dreumel]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Dreumel<br/>
+                                            	<a href="https://www.facebook.com/ScoutingDreumel/?fref=ts" target="_blank">
+                                            			https://www.facebook.com/ScoutingDreumel/?fref=ts                	</a><br>
+                                            	De Paulus  1<br />
+                                            	6621 CB Dreumel<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.43233223259449,51.848627870970724,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Isala Groep Scouting Doesburg]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Doesburg<br/>
+                                            	<a href="http://www.scoutingdoesburg.nl" target="_blank">
+                                            			http://www.scoutingdoesburg.nl                	</a><br>
+                                            	Meipoortwal 1<br />
+                                            	6981 DD Doesburg<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.138114929126459,52.016104456471815,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Phoenix Tiel]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Tiel<br/>
+                                            	<a href="http://jotihunt.scoutingphoenix.nl" target="_blank">
+                                            			http://jotihunt.scoutingphoenix.nl                	</a><br>
+                                            	De Hennepe 199<br />
+                                            	4003AD Tiel<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.426328778266907,51.89994543060916,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Olivier van Noort]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Wageningen <br/>
+                                            	<a href="http://www.oliviervannoort.nl/" target="_blank">
+                                            			http://www.oliviervannoort.nl/                	</a><br>
+                                            	Aan de Rijn 5A <br />
+                                            	 6701 PB Wageningen <br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.674875,51.958137,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Titus Brandsma Deventer]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Deventer-Colmscate<br/>
+                                            	<a href="http://www.connectitus.nl/" target="_blank">
+                                            			http://www.connectitus.nl/                	</a><br>
+                                            	Doornenburg 530<br />
+                                            	7423BT Deventer-Colmscate<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.2122642993927,52.25057096871767,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Duiven]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Duiven<br/>
+                                            	<a href="http://www.scoutingduiven.nl" target="_blank">
+                                            			http://www.scoutingduiven.nl                	</a><br>
+                                            	De Nieuweling 3<br />
+                                            	6921JL Duiven<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.0322317481040955,51.94403175071277,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[De Markesteen]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Velp<br/>
+                                            	<a href="http://www.markesteen.com" target="_blank">
+                                            			http://www.markesteen.com                	</a><br>
+                                            	Bovenallee 3<br />
+                                            	6881 AJ Velp<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.984410643577576,52.016017356641655,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Roothaangroep]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Doetinchem<br/>
+                                            	<a href="http://roothaangroep.nl/" target="_blank">
+                                            			http://roothaangroep.nl/                	</a><br>
+                                            	Koekendaalseweg 11<br />
+                                            	7004 GH Doetinchem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.320988647639751,51.94940166142632,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Jotihunt Organisatie]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://www.jotihunt.net" target="_blank">
+                                            			http://www.jotihunt.net                	</a><br>
+                                            	Zeelandsingel 40<br />
+                                            	6845 BH Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.868185,51.952676,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Zetten]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Zetten<br/>
+                                            	<a href="http://jotihunt.scoutingzetten.nl" target="_blank">
+                                            			http://jotihunt.scoutingzetten.nl                	</a><br>
+                                            	Piersonstraat 21<br />
+                                            	6671 CK Zetten<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.709352791309357,51.93259540215558,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Weurt]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Weurt<br/>
+                                            	<a href="http://www.scoutingweurt.nl" target="_blank">
+                                            			http://www.scoutingweurt.nl                	</a><br>
+                                            	Kerkstraat 50<br />
+                                            	6551 ZZ Weurt<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.817287564277649,51.859157468453326,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scoutinggroep JJB]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Apeldoorn<br/>
+                                            	<a href="http://www.scoutinggroep-jjb.net" target="_blank">
+                                            			http://www.scoutinggroep-jjb.net                	</a><br>
+                                            	Berghuizerweg 155<br />
+                                            	7312SN Apeldoorn<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.923180840909481,52.1970259735572,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Sweder van voorst hummelo]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Hummelo<br/>
+                                            	<a href="http://www.scoutingsweder.nl" target="_blank">
+                                            			http://www.scoutingsweder.nl                	</a><br>
+                                            	Torenallee  2 A<br />
+                                            	6999 DD Hummelo<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.2244415283203125,52.02087357549802,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Saksenheerd]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Breedenbroek<br/>
+                                            	<a href="http://scoutingsaksenheerd.nl/" target="_blank">
+                                            			http://scoutingsaksenheerd.nl/                	</a><br>
+                                            	Terborgseweg 16B<br />
+                                            	7084 AJ Breedenbroek<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.463743187487125,51.87437014575964,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Verbraak Margriet Groep Harderwijk]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Harderwijk<br/>
+                                            	<a href="http://www.verbraakmargrietgroep.nl/" target="_blank">
+                                            			http://www.verbraakmargrietgroep.nl/                	</a><br>
+                                            	Strokelweg  6<br />
+                                            	3847 LR Harderwijk<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.636080,52.324881,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[St. Christoforus-Lichtdraagsters]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://www.christoforus.nl" target="_blank">
+                                            			http://www.christoforus.nl                	</a><br>
+                                            	Monikkensteeg 4<br />
+                                            	6823 AB Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.931675732135773,51.99614131310567,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Paul Kruger]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijmegen<br/>
+                                            	<a href="http://www.scoutingpaulkruger.nl/" target="_blank">
+                                            			http://www.scoutingpaulkruger.nl/                	</a><br>
+                                            	Sophiaweg 448<br />
+                                            	6523NJ Nijmegen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.891060382127762,51.825681262596476,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Jonko]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Silvolde<br/>
+                                            	<a href="http://www.scoutingsilvolde.nl/" target="_blank">
+                                            			http://www.scoutingsilvolde.nl/                	</a><br>
+                                            	Kerkenstraat 5<br />
+                                            	7064BH Silvolde<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.3811831176280975,51.91025337486049,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Kon-Tiki]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Putten<br/>
+                                            	<a href="http://www.scoutingkontiki.nl" target="_blank">
+                                            			http://www.scoutingkontiki.nl                	</a><br>
+                                            	Garderenseweg 144b<br />
+                                            	3881 NC Putten<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.639687776565552,52.2449612907539,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Irmin-Taweb]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Ermelo<br/>
+                                            	<a href="http://www.irmin-taweb.nl" target="_blank">
+                                            			http://www.irmin-taweb.nl                	</a><br>
+                                            	Kalkoenweg 23<br />
+                                            	3851SB Ermelo<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.620078146457672,52.31540711050691,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Triton Scouting Culemborg]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Culemborg<br/>
+                                            	<a href="http://www.tritonscouting.nl/" target="_blank">
+                                            			http://www.tritonscouting.nl/                	</a><br>
+                                            	Steenovenslaan 4<br />
+                                            	4101 AM Culemborg<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.217658281326294,51.96094776739098,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scoutinggroep de Bevers, Nijmegen en Scouting Malden, Malden]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijmegen<br/>
+                                            	<a href="http://www.scoutinggroepdebevers.nl" target="_blank">
+                                            			http://www.scoutinggroepdebevers.nl                	</a><br>
+                                            	Staddijk 105<br />
+                                            	6537 TW Nijmegen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.78978,51.80907,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Lunteren]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Lunteren<br/>
+                                            	<a href="http://www.scoutinglunteren.nl" target="_blank">
+                                            			http://www.scoutinglunteren.nl                	</a><br>
+                                            	Hessenweg 77<br />
+                                            	6741JP Lunteren<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.650860518217087,52.0915360410397,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Gendringen]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Gendringen<br/>
+                                            	<a href="http://www.scoutinggendringen.nl" target="_blank">
+                                            			http://www.scoutinggendringen.nl                	</a><br>
+                                            	Tulpstraat  6<br />
+                                            	7081 EB  Gendringen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.37095183134079,51.870264411568975,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting valeouwe ]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Loenen <br/>
+                                            	<a href="" target="_blank">
+                                            			                	</a><br>
+                                            	Lonapark 10<br />
+                                            	7371 EH Loenen <br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.027696132659912,52.12271267025277,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[St. Werenfridusgroep Scouting Elst]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Elst<br/>
+                                            	<a href="http://www.scoutingelst.nl" target="_blank">
+                                            			http://www.scoutingelst.nl                	</a><br>
+                                            	De Pas 4<br />
+                                            	6662BK Elst<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.8434538543224335,51.90663883066961,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Valburg (Christophorus)]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Valburg<br/>
+                                            	<a href="http://www.scoutingvalburg.nl" target="_blank">
+                                            			http://www.scoutingvalburg.nl                	</a><br>
+                                            	Burgemeester van Lyndenpark 71<br />
+                                            	6675AZ Valburg<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.789498806000779,51.91260058781788,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[De Geuzen Arnhem]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://www.degeuzenarnhem.nl" target="_blank">
+                                            			http://www.degeuzenarnhem.nl                	</a><br>
+                                            	Diependalseweg 3<br />
+                                            	6813 GE Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.876215696334839,51.98762219414704,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Ragay Redoz]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Harderwijk<br/>
+                                            	<a href="http://www.padvindertje.nl/" target="_blank">
+                                            			http://www.padvindertje.nl/                	</a><br>
+                                            	Strokelweg 4<br />
+                                            	3847 LR  Harderwijk<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.633835196495056,52.32633057291369,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Stadhouder Willem III / Lady Baden-Powell]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Apeldoorn<br/>
+                                            	<a href="http://sw3lbp.nl" target="_blank">
+                                            			http://sw3lbp.nl                	</a><br>
+                                            	Jachtlaan 4-6<br />
+                                            	7313CP Apeldoorn<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.942942351102829,52.22582623250683,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Woezik]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Wijchen<br/>
+                                            	<a href="http://www.scoutingwoezik.nl" target="_blank">
+                                            			http://www.scoutingwoezik.nl                	</a><br>
+                                            	Oud-Woeziksestraat 3<br />
+                                            	6604 KD Wijchen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.71738064289093,51.82517564429223,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Amalgama]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijmegen<br/>
+                                            	<a href="http://www.scoutingamalgama.nl" target="_blank">
+                                            			http://www.scoutingamalgama.nl                	</a><br>
+                                            	Weteringweg 50<br />
+                                            	6546 JZ  Nijmegen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.785602629184723,51.839155971079656,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[ZV de Batavieren]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Nijmegen<br/>
+                                            	<a href="http://www.batavieren.com/" target="_blank">
+                                            			http://www.batavieren.com/                	</a><br>
+                                            	Grootstalselaan 13<br />
+                                            	6533KH Nijmegen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.849066376686096,51.808017729924735,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Alexandergroep Ermelo]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Ermelo<br/>
+                                            	<a href="http://alexandergroep.nl" target="_blank">
+                                            			http://alexandergroep.nl                	</a><br>
+                                            	Watervalweg 175<br />
+                                            	3853 PS Ermelo<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.5945515632629395,52.28673438332683,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Subanhara Liemersgroep Zevenaar]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Zevenaar<br/>
+                                            	<a href="http://www.subanharaliemersgroep.nl" target="_blank">
+                                            			http://www.subanharaliemersgroep.nl                	</a><br>
+                                            	Slenterweg 29<br />
+                                            	6905DP Zevenaar<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.0661535,51.9157894,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Bemmel]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Bemmel<br/>
+                                            	<a href="http://www.scouting-bemmel.nl/" target="_blank">
+                                            			http://www.scouting-bemmel.nl/                	</a><br>
+                                            	Sportlaan  1f<br />
+                                            	6681 CD Bemmel<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.905559062957764,51.88717479650244,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[St.franciscus]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Niftrik<br/>
+                                            	<a href="www.scoutingwijchen.nl" target="_blank">
+                                            			www.scoutingwijchen.nl                	</a><br>
+                                            	Loonsewaard 40<br />
+                                            	6606 KG Niftrik<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.702086687088013,51.79302325002608,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Opv-Schoonoord]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Oosterbeek<br/>
+                                            	<a href="http://www.opv-schoonoord.nl" target="_blank">
+                                            			http://www.opv-schoonoord.nl                	</a><br>
+                                            	Van borsselenweg  43<br />
+                                            	6862BH Oosterbeek<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.820329189300537,51.981298698207034,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Sint Jorisgroep]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Westervoort<br/>
+                                            	<a href="http://www.sint-jorisgroep.nl" target="_blank">
+                                            			http://www.sint-jorisgroep.nl                	</a><br>
+                                            	Paepestraat  27<br />
+                                            	6931 CP Westervoort<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.963478684425354,51.958659857995606,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Scouting Grave & Boxmeer]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Heumen<br/>
+                                            	<a href="http://scoutinggrave.nl/" target="_blank">
+                                            			http://scoutinggrave.nl/                	</a><br>
+                                            	Overasseltseweg 4b<br />
+                                            	6582 BL Heumen<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.829393714666367,51.76526201473722,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Hertog van Gelre]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Apeldoorn<br/>
+                                            	<a href="http://scoutinghvg.nl" target="_blank">
+                                            			http://scoutinghvg.nl                	</a><br>
+                                            	Polderweg 4<br />
+                                            	7327 GX Apeldoorn<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>6.0053640604019165,52.184242431412,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
+                                                <Placemark>
+                                            <styleUrl>#groep</styleUrl>
+                            				<name><![CDATA[Lincolngroep]]></name>
+                                            <description><![CDATA[
+                                            <p>
+                                            	Arnhem<br/>
+                                            	<a href="http://www.lincolngroep.nl" target="_blank">
+                                            			http://www.lincolngroep.nl                	</a><br>
+                                            	Het Nieuwe Land 29<br />
+                                            	6828DZ Arnhem<br>
+                                            </p>
+                                            ]]></description>
+                            				<Point>
+                            					<coordinates>5.917226,51.982971,0.0</coordinates>
+                            				</Point>
+                            			</Placemark>
 					</Folder>
 		<Folder>
         			<name>Deelgebieden</name>

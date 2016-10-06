@@ -16,7 +16,7 @@ class Help extends React.Component {
                 <td>{config.passwords[i].name}</td>
                 <td>{config.passwords[i].username}</td>
                 <td>{config.passwords[i].password}</td>
-                <td>{config.passwords[i].url}</td>
+                <td><a className="btn btn-default" href={config.passwords[i].url}>Ga naar de website</a></td>
             </tr>
         );
       }
