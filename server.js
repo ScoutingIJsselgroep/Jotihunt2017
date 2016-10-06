@@ -430,7 +430,7 @@ apiRoutes.get("/polygon", function (req, res, next) {
                 switch (it.geometry.type) {
                     case "Polygon":
                         const refactor = [];
-                        let i;
+                        var i;
                         for (i in it.geometry.coordinates[0]) {
                             refactor.push({
                                 latitude: it.geometry.coordinates[0][i][1],
