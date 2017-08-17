@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Link} from 'react-router';
+import {Link, browserHistory} from 'react-router';
 import AuthActions from './../actions/AuthActions';
 import AuthStore from './../stores/AuthStore';
 
@@ -51,12 +51,14 @@ class Login extends React.Component {
     }
 
     _doAuthentication(authResult){
+        var that = this;
         this.lock.getProfile(authResult.idToken, (error, profile) => {
             if (error) {
                 toastr.error('Error loading the Profile');
             } else {
                 AuthActions.login({profile: profile, token: authResult.idToken});
-                this.props.update();
+                that.props.update();
+
             }
         });
     }

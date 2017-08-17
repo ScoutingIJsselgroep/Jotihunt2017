@@ -64,11 +64,19 @@ class Navbar extends React.Component {
 
   render() {
     var navbar;
-    if(AuthStore.getState().authenticated && loggedIn()){
+    if(loggedIn()){
       navbar =  <ul className='nav navbar-nav'>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/passwords'>Wachtwoorden</Link></li>
-        <li><Link to='/help'>Help</Link></li>
+        <li className='dropdown'>
+          <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Over <span className='caret'></span></a>
+          <ul className='dropdown-menu'>
+            <li><Link to='/help'>Wat is Jotihunt?</Link></li>
+            <li className='divider'></li>
+            <li><Link to='/hint/list'>Lijst</Link></li>
+            <li><Link to='/hint/map'>Kaart</Link></li>
+          </ul>
+        </li>
         <li className='dropdown'>
           <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Hints <span className='caret'></span></a>
           <ul className='dropdown-menu'>

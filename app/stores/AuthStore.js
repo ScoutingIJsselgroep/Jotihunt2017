@@ -18,6 +18,7 @@ class AuthStore {
 
         this.jwtkey = data.token;
         this.authenticated = true;
+        window.location.reload();
         this.emitChange();
     }
 

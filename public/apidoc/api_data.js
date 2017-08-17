@@ -1,8 +1,278 @@
 define({ "api": [
   {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "private",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Private"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
+    "type": "",
+    "url": "public",
+    "title": "",
+    "version": "0.0.0",
+    "filename": "./node_modules/socket.io/node_modules/engine.io/lib/server.js",
+    "group": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "groupTitle": "C__Users_Tristan_de_Boer_IdeaProjects_jotihunt_js_node_modules_socket_io_node_modules_engine_io_lib_server_js",
+    "name": "Public"
+  },
+  {
     "type": "get",
     "url": "/api/cars",
-    "title": "Get a list of hints.",
+    "title": "Get a list of cars.",
     "name": "GetCars",
     "group": "Car",
     "header": {
@@ -68,7 +338,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/api/car",
+    "url": "/api/cars",
     "title": "Post a new car location.",
     "name": "PostCar",
     "group": "Car",
@@ -92,14 +362,14 @@ define({ "api": [
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "wsgx",
+            "field": "latitude",
             "description": "<p>WSG84 Lat (52.199735).</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "wsgy",
+            "field": "longitude",
             "description": "<p>WSG84 Lng (6.2130697).</p>"
           }
         ]
@@ -283,6 +553,13 @@ define({ "api": [
             "optional": false,
             "field": "value",
             "description": "<p>Applies a filter to certain fields in the database.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "age",
+            "description": "<p>Applies some age to the hints (default 6 hours).</p>"
           }
         ]
       }
@@ -389,6 +666,13 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
+            "field": "type",
+            "description": "<p>Type of the hint (hint, hunt or other).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
             "field": "location",
             "description": "<p>The location as string.</p>"
           },
@@ -449,135 +733,5 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "./server.js",
     "groupTitle": "Hint"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "./node_modules/engine.io/lib/server.js",
-    "group": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "groupTitle": "_home_tristan_WebstormProjects_jotihunt_react_node_modules_engine_io_lib_server_js",
-    "name": "Public"
   }
 ] });

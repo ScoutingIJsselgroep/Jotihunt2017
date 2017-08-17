@@ -8,8 +8,8 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js",
+    "start": "set MONGO_URI=mongodb://jotihuntjs:ElKN*gO4%ZnB0X@45.76.39.50/jotihuntjs & node server.js",
+    "watch": "set MONGO_URI=mongodb://jotihuntjs:ElKN*gO4%ZnB0X@45.76.39.50/jotihuntjs & nodemon server.js",
     "preinstall": "npm install apidoc -g",
     "postinstall": "apidoc -f server.js -o public/apidoc/ && bower install && gulp build"
   },
